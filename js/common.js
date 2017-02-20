@@ -8,14 +8,14 @@
 	$(".loader_inner").delay(6500).fadeOut();
 	$(".loader").delay(6500).fadeOut("slow");
 
-	$(document).ready(function() {
+	/*$(document).ready(function() {
   // Nav icon
   $('#nav-icon').click(function() {
     $(this).toggleClass('open');
     $("#menu-overlay").toggleClass("menu-show");
   });
 
-});
+});*/
 
 var heroHeight;
 
