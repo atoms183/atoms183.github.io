@@ -1,0 +1,245 @@
+# Information for compile
+exclude: ["node_modules", "gulpfile.js", "package.json", "README.md"]
+
+####################################
+######  Global Social Links   ######
+####################################
+youtube: '#'
+twitter: '#'
+
+skills:
+- title: Ruby Developer
+  description: I have been developing Ruby for 4 years and strive to maintain best practices.
+  icon: pe-7s-vector
+
+- title: AWS Proficient
+  description: I've built up a skillset in immutable infrastructure and a familiarity with everything that helps to build a cheap and reliable infrastructure. EC2, CloudFormation, CloudWatch Logs, ECS, ELBs, Route 53 etc.
+  icon: pe-7s-help2
+
+- title: Communicator
+  description: Worked with production managers, business strategists, development peers, and junior developers across countless projects.
+  icon: pe-7s-airplay
+
+#
+# Portfolio Grid
+#
+portfolio-categories: [Websites,Logo,Graphic Design,Development,Video,Photography]
+portfolio:
+
+# Portfolio Item
+- title: Images one
+  categories: [Websites]
+  image: img-01.jpg
+  url: '#'
+# Portfolio Item
+- title: Images two
+  categories: [Websites]
+  image: img-02.jpg
+  url: '#'
+  
+ # Portfolio Item
+- title: Images three
+  categories: [Websites]
+  image: img-03.jpg
+  url: '#'
+ # Portfolio Item
+- title: Images four
+  categories: [Logo]
+  image: img-04.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images five
+  categories: [Graphic Design]
+  image: img-05.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images six
+  categories: [Graphic Design]
+  image: img-06.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images seven
+  categories: [Development]
+  image: img-07.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images eight
+  categories: [Video]
+  image: img-08.jpg
+  url: '#'
+  
+  # Portfolio Item
+- title: Images nine
+  categories: [Photography]
+  image: img-09.jpg
+  url: '#'
+#####################################
+########### Testimonials ############
+#####################################
+testimonials-title: Testimonials
+testimonials-description: Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi.
+
+#
+# Testimonials
+#
+testimonials:
+
+# Client
+- name: Johnatan Doe
+  url: http://themeforest.net
+  url-text: ThemeForest.net
+  avatar: avatar-01.jpg
+  cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+  logo-img: themeforest.png
+
+# Client
+- name: Adam Smith
+  url: http://codecanyon.net
+  url-text: CodeCanyon.net
+  avatar: avatar-02.jpg
+  cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+  logo-img: codecanyon.png
+
+# Client
+- name: Irene Warner
+  url: http://videohive.net
+  url-text: VideoHive.net
+  avatar: avatar-03.jpg
+  cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+  logo-img: videohive.png
+
+# Client
+- name: Richard Ryan
+  url: http://audiojungle.net
+  url-text: AudioJungle.net
+  avatar: avatar-04.jpg
+  cite: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius adipiscing lectus, eu ornare lectus semper in. Aenean at tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed.
+  logo-img: audiojungle.png
+
+
+#####################################
+############# Our Blog ##############
+#####################################
+blog-title: Our Blog
+blog-description: Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi. Nulla a tellus at turpis gravida congue non sed nisl. Pellentesque scelerisque eu neque et tincidunt.
+
+
+#####################################
+############### Team ################
+#####################################
+team-title: Meet Our Team
+team-description: Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi. Nulla a tellus at turpis gravida congue non sed nisl. Pellentesque scelerisque eu neque et tincidunt.
+
+#
+# Team Members
+#
+team:
+
+# Team Member
+- name: Jack Skilton
+  tagline: Graphic Designer
+  avatar: avatar-01.jpg
+
+  # Social Links
+  youtube: '#'
+  pinterest: '#'
+  facebook: '#'
+  twitter: '#'
+  google-plus: '#'
+  vimeo: '#'
+
+# Team Member
+- name: James Young
+  tagline: Developer
+  avatar: avatar-02.jpg
+
+  # Social Links
+  youtube: '#'
+  pinterest: '#'
+  facebook: '#'
+  twitter: '#'
+  google-plus: '#'
+  vimeo: '#'
+
+# Team Member
+- name: Johnatan Doe
+  tagline: Hacker
+  avatar: avatar-04.jpg
+
+  # Social Links
+  youtube: '#'
+  pinterest: '#'
+  facebook: '#'
+  twitter: '#'
+  google-plus: '#'
+  vimeo: '#'
+
+# Team Member
+- name: Ecaterina Doe
+  tagline: Support Expert
+  avatar: avatar-03.jpg
+
+  # Social Links
+  youtube: '#'
+  pinterest: '#'
+  facebook: '#'
+  twitter: '#'
+  google-plus: '#'
+  vimeo: '#'
+
+
+#####################################
+########## Pricing Tables ###########
+#####################################
+pricing-title: Pricing Tables
+pricing-description: Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat vitae volutpat sed, suscipit et nisi. Nulla a tellus at turpis gravida congue non sed nisl. Pellentesque scelerisque eu neque et tincidunt.
+
+#
+# Plan Personal
+#
+plan-personal-price: $99
+plan-personal-offer-1-title: 01 PSD Pack
+plan-personal-offer-1-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-personal-offer-2-title: 100 Support Tickets
+plan-personal-offer-2-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-personal-url: '#'
+
+#
+# Plan Business
+#
+plan-business-price: $499
+plan-business-offer-1-title: 05 PSD Pack
+plan-business-offer-1-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-business-offer-2-title: 1000 Support Tickets
+plan-business-offer-2-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-business-url: '#'
+
+#
+# Plan Ultimate
+#
+plan-ultimate-price: $999
+plan-ultimate-offer-1-title: 10 PSD Pack
+plan-ultimate-offer-1-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-ultimate-offer-2-title: Support Unlimited
+plan-ultimate-offer-2-info: Mauris gravida fringilla est. Proin sodales sed erat et cursus. Mauris quis posuere enim.
+plan-ultimate-url: '#'
+
+
+#####################################
+############   Contact   ############
+#####################################
+contact-title: Contact Us
+contact-description: Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat.
+
+
+#####################################
+#############   Footer   ############
+#####################################
+footer-description: Nulla a tellus at turpis gravida congue non interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi id ornare ante. Cras odio nibh, volutpat.
+footer-copyright-text: Gleesik&trade;
+footer-copyright-url: http://gleesik.ro/
+footer-copyright-year: 2016

@@ -1,0 +1,48 @@
+<!-- Features Section -->
+<section class="site-section section-focus skills-section" id="skills">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>My Skills</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>
+          I am an experienced and self-sufficient backend Ruby developer. I understand everything that goes into not just coding a successful web app, but deploying, maintaining, and monitoring it. I'm increasingly interested in dev-ops and the concept of infrastructure as code, with all the power and efficiency that brings to the table.
+        </p>
+        <p></p>
+      </div>
+
+    </div>
+
+    <!-- Features -->
+    <div class="row skills">
+
+      {% for skill in site.skills %}
+
+      <div class="col-md-4 col-md-push-0 col-sm-8 col-sm-push-2 col-xs-10 col-xs-push-1 feature">
+        <div class="icon parent">
+          <div class="circle parent">
+            <div class="circle child-center">
+              <i class="{{ skill.icon }} child-center"></i>
+            </div>
+          </div>
+        </div>
+        <div class="content text-center">
+          <h3>{{ skill.title }}</h3>
+          <p>{{ skill.description }}</p>
+        </div>
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>
