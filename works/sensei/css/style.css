@@ -507,7 +507,7 @@ main {
 }
 @media (max-width: 992px) {
   .cover-page {
-    padding: 0px;
+    padding: 40px;
   }
   .body-items-weknow {
     -ms-flex-wrap: wrap;
