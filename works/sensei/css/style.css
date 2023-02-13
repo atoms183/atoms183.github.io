@@ -388,6 +388,10 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
+.consult__page {
+  padding: 0 0 90px 0;
+}
+
 .page-consult__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,7 +410,7 @@ main {
           box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.18);
   border-radius: 7px;
   resize: none;
-  padding: 10px 0 0 10px;
+  padding: 10px 0 10px 10px;
 }
 .form_consult input::-webkit-input-placeholder {
   padding: 0 0 0 10px;
@@ -557,6 +561,104 @@ main {
   border-radius: 20px;
 }
 
+.page-works__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item-work {
+  padding: 15px;
+  -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.18);
+  border-radius: 15px;
+}
+
+.item-work__text {
+  padding: 20px 20px;
+  max-width: 510px;
+  line-height: 162%;
+}
+
+.result-item {
+  background: #F3F1FE;
+  padding: 20px;
+}
+
+.result-item__title, .result__value, .system-item__title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 144%;
+  text-transform: uppercase;
+  padding: 0 0 10px 0;
+}
+
+.system-item {
+  padding: 20px;
+}
+
+.system-item__link:not(:last-child) {
+  padding: 0 15px 0 0;
+}
+
+.result-item__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.item-work__image {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+}
+.item-work__image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slider {
+  position: relative;
+  min-width: 0;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 55%;
+  margin: -30px 0 0 0;
+  z-index: 10;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: -4%;
+  background: url("../img/icons/sl-arrow_l.svg") 0 0/100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: -4%;
+  background: url("../img/icons/sl-arrow_r.svg") 0 0/100% no-repeat;
+}
+
 .footer__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,6 +729,17 @@ main {
   color: #FFF;
 }
 
+@media (max-width: 1250px) {
+  .item-work {
+    margin: 0 200px 0 200px;
+  }
+  .slider .slick-arrow.slick-prev {
+    left: 10%;
+  }
+  .slider .slick-arrow.slick-next {
+    right: 10%;
+  }
+}
 @media (max-width: 1170px) {
   .title h2 {
     font-size: 25px;
@@ -675,8 +788,6 @@ main {
   .page-consult__image {
     margin: 40px 0 0 0;
   }
-}
-@media (max-width: 1170px) {
   .body-items-servises {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -684,6 +795,17 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 45px;
+  }
+}
+@media (max-width: 1050px) {
+  .item-work {
+    margin: 0 150px 0 150px;
+  }
+  .slider .slick-arrow.slick-prev {
+    left: 2%;
+  }
+  .slider .slick-arrow.slick-next {
+    right: 1%;
   }
 }
 @media (max-width: 992px) {
@@ -718,6 +840,29 @@ main {
   .footer__top {
     display: none;
   }
+  .result-item {
+    text-align: center;
+  }
+  .result-item__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .item-work__image {
+    margin: 0 auto;
+  }
+  .item-work__text {
+    text-align: center;
+    max-width: 100%;
+  }
+  .system-item {
+    text-align: center;
+  }
+  .item-work {
+    margin: 0px;
+  }
 }
 @media (max-width: 670px) {
   .mainblock__title {
@@ -733,6 +878,9 @@ main {
   }
   .mainblock__button {
     padding: 5px 10px;
+  }
+  .item-work {
+    margin: 0px;
   }
 }
 @media (max-width: 580px) {
@@ -760,6 +908,8 @@ main {
   }
   .form_consult input, .form_consult textarea {
     font-size: 12px;
+    -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.18);
+            box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.18);
   }
   .form__area {
     width: 450px;
@@ -805,11 +955,16 @@ main {
         -ms-flex: 0 0 85px;
             flex: 0 0 85px;
   }
-  .form_consult input, .form_consult textarea {
-    font-size: 12px;
-  }
+  /*.form_consult {
+  	& input,textarea{
+  	font-size: 12px;
+  	box-shadow: 0px 4px 18px rgb(0 0 0 / 18%);
+  	} 
+  }*/
   .form__area {
     width: 300px;
+    -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.18);
+            box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.18);
   }
 }
 @media (max-width: 430px) {
