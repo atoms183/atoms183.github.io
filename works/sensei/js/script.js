@@ -20,3 +20,21 @@ for (let anchor of anchors) {
     })
   })
 }
+
+$(document).ready(function () {
+ $('.slider').slick({
+   arrows:true,
+   slidesToShow: 2,
+   autoplay:true,
+    speed:2000,
+    autoplaySpeed:800,
+      responsive:[
+      {
+        breakpoint: 1250,
+        settings: {
+          slidesToShow:1
+        }
+      }
+    ]
+ });
+});
