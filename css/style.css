@@ -284,7 +284,7 @@ main {
 }
 
 .main-block__content {
-  max-width: 445px;
+  max-width: 515px;
 }
 .main-block__content > *:not(:last-child) {
   margin: 0 0 40px 0;
@@ -541,7 +541,7 @@ main {
 .page__title {
   padding: 25px 0 25px 0px;
   font-weight: 700;
-  font-size: 44px;
+  font-size: 35px;
   line-height: 136%;
   color: #21243D;
 }
