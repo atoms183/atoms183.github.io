@@ -121,6 +121,8 @@ main {
   font-size: 24px;
   line-height: 33px;
   color: #868585;
+  text-transform: uppercase;
+  padding: 0 0 60px 0;
 }
 
 .item-title {
@@ -137,8 +139,8 @@ main {
     border-radius: 50%;
   }
   70% {
-    -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.4);
-            box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
     border-radius: 50%;
   }
   100% {
@@ -155,8 +157,8 @@ main {
     border-radius: 50%;
   }
   70% {
-    -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.4);
-            box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
     border-radius: 50%;
   }
   100% {
@@ -248,7 +250,7 @@ main {
 }
 
 .socials-page {
-  padding: 0 0 35px 0;
+  padding: 85px 0 35px 0;
   text-align: center;
   /* .socials-page__item */
 }
@@ -270,10 +272,62 @@ main {
           transform: rotate(-360deg);
 }
 
-.test {
-  padding: 50px 0;
+.page__servises {
+  padding: 150px 0;
 }
 
+.servises-page__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 90px;
+}
+.servises-page__columns {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+.column-servises__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+
+.item-servises__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #303030;
+  padding: 0 0 15px 0;
+}
+.item-servises__text {
+  font-size: 14px;
+  line-height: 19px;
+  color: #303030;
+}
+
+@media (max-width: 1170px) {
+  .title {
+    text-align: center;
+  }
+  .servises-page__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .servises-page__columns {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 80%;
+            flex: 0 1 80%;
+  }
+}
 @media (max-width: 992px) {
   .cover-page__body {
     padding: 180px 0 0 0;
