@@ -231,7 +231,12 @@ main {
   height: 100%;
   top: 0;
   left: 0;
+  background: #000;
 }
+.cover-page__image img {
+  opacity: 0.8;
+}
+
 .consultation {
   /* .consultation__link */
 }
