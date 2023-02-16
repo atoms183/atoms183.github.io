@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonar</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 </head>
 
 <body>
@@ -23,7 +24,6 @@
         <main class="main">
 
             <div class="page__cover cover-page">
-
                 <div class="cover-page__body">
                     <div class="cover-page__label">
                         <p>Зеленый тариф для дома и бизнеса</p>
@@ -35,8 +35,8 @@
                         <h2>с доходом от 1000 $ в месяц</h2>
                     </div>
                     <div class="cover-page__links">
-                        <a class="main-link__arrow"><svg style width="101" height="100" viewBox="0 0 101 100"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a class="main-link__arrow"><svg width="101" height="100" viewBox="0 0 101 100" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M70.7434 50.7071C71.134 50.3166 71.134 49.6834 70.7434 49.2929L64.3795 42.9289C63.989 42.5384 63.3558 42.5384 62.9653 42.9289C62.5747 43.3195 62.5747 43.9526 62.9653 44.3431L68.6221 50L62.9653 55.6569C62.5747 56.0474 62.5747 56.6805 62.9653 57.0711C63.3558 57.4616 63.989 57.4616 64.3795 57.0711L70.7434 50.7071ZM30.0155 51H70.0363V49H30.0155V51Z"
                                     fill="white" />
@@ -50,21 +50,48 @@
                     </div>
                     <div class="cover-page__socials socials-page">
                         <a href="#!" class="socials-page__item"><img src="img/icons/02.svg" alt=""></a>
-                        <a href="#!" class="socials-page__item"><img src="img/icons/01.svg" alt=""></a>
                         <a href="#!" class="socials-page__item"><img src="img/icons/03.svg" alt=""></a>
                         <a href="#!" class="socials-page__item"><img src="img/icons/04.svg" alt=""></a>
+                        <a href="#!" class="socials-page__item"><img src="img/icons/01.svg" alt=""></a>
                     </div>
                 </div>
                 <!--cover-page__body-->
                 <div class="cover-page__image _ibg"><img src="img/cover/cover.jpg" alt="cover"></div>
             </div>
 
-
             <div class="page__servises servises-page">
-                <div class="servises-page"> </div>
+                <div class="servises-page__container">
+                    <div class="servises-page__title title">УСЛУГИ</div>
+                    <div class="servises-page__body">
+                        <div class="servises-page__columns column-servises">
+                        <div class="column-servises__row">
+                            <div class="column-servises__item item-servises">
+                                <div class="item-servises__title">Полный комплект солнечной электростанции</div>
+                                <div class="item-servises__text">74 модели солнечных панелей, 31 модель инверторов, провода с повышенной устойчивостью к атмосферным условиям, качественные соединители, контроллеры зарядов и надежные гелевые аккумуляторы с увеличенным сроком службы.</div>
+                            </div>
+                            <div class="column-servises__item item-servises">
+                                <div class="item-servises__title">Подбор оборудования с максимальной производительностью</div>
+                                <div class="item-servises__text">Подбираем солнечные панели с учетом расположения Вашего дома, количеством прямого и рассеянного излучения, для того, чтобы Ваша электростанция - вырабатывала максимальное количество электроэнергии и окупилась как можно быстрее.</div>
+                            </div>
+
+                            <div class="column-servises__item item-servises">
+                                <div class="item-servises__title">Монтаж оборудования в соответствии с ГОСТом </div>
+                                <div class="item-servises__text">Монтаж производится в точном соответствии с ГОСТом, с учетом закона о «Зеленом тарифе» и требованиями Облэнерго. При этом, мы учитываем, чтобы солнечная станция имела максимально возможную производительность.</div>
+                            </div>
+
+                            <div class="column-servises__item item-servises">
+                                <div class="item-servises__title">Помощь в подключении к «Зеленому тарифу»</div>
+                                <div class="item-servises__text">Всю бюрократическую процедуру по подключению Вашей электростанции к «Зеленому тарифу», мы берем на себя, в том числе по увеличению договорной мощности вашего дома. При заказе солнечной электростанции эта услуга абсолютно бесплатна.</div>
+                            </div>
+
+                        </div>
+                        </div>
+
+                        <div class="servises-page__image _ibg"><img src="img/servises/01.jpg" alt="servises"></div>
+
+                    </div>
+                </div>
             </div>
-
-
 
 
         </main>
@@ -75,8 +102,9 @@
 
     <script src="js/jquery-3.6.3.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
-
+    <!--<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+ <script src="js/script.js"></script>
+ 
 </body>
 
 </html>
