@@ -10,7 +10,7 @@
       $('.slider').slick({
         arrows:true,
         slidesToShow: 1,
-        autoplay:false,
+        autoplay:true,
          speed:3000,
          autoplaySpeed:800,
            responsive:[
