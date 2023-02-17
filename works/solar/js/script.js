@@ -1,7 +1,25 @@
-$(document).ready(function() {
-$('.header__burger').click(function(event) {
-$('.header__burger,.header__menu').toggleClass('active');
-$('body').toggleClass('lock');
-});
-});
- 
+   /* (function ($) {
+      $(window).on("load", function () {
+        $('body').mCustomScrollbar({
+          theme: "dark"
+        });
+      });
+    })(jQuery);*/
+    
+    $(document).ready(function () {
+      $('.slider').slick({
+        arrows:true,
+        slidesToShow: 1,
+        autoplay:false,
+         speed:3000,
+         autoplaySpeed:800,
+           responsive:[
+           {
+             breakpoint: 1250,
+             settings: {
+               slidesToShow:1
+             }
+           }
+         ]
+      });
+     });
