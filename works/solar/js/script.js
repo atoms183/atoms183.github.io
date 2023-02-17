@@ -1,11 +1,4 @@
- (function ($) {
-      $(window).on("load", function () {
-        $('body').mCustomScrollbar({
-          theme: "dark"
-        });
-      });
-    })(jQuery);
-    
+
     $(document).ready(function () {
       $('.slider').slick({
         arrows:true,
