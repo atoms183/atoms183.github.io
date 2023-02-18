@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonar</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 </head>
 
 <body>
@@ -114,66 +115,105 @@
                     <div class="green-page__title title">ЗЕЛЕНЫЙ ТАРИФ</div>
                     <div class="green-page__body">
                         <div class="tab__column column-tab">
-                           
+
                             <ul class="column-tab__list">
                                 <li data-tab="tab-1" class="column-tab__title">продажа</li>
                                 <li data-tab="tab-2" class="column-tab__title">закрепление</li>
                                 <li data-tab="tab-3" class="column-tab__title">ограничения</li>
                             </ul>
-                         
+
                             <div id="tab-1" class="column-tab__body body_column-tab tab__content hidden-tab-content">
-                                <div class="body_column-tab__image _ibg"><img src="img/green/07.jpg" alt="column-tab__image"></div>
-                                <div class="tab-content__item">
-                                <div class="body_column-tab__text">Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+                                <div class="body_column-tab__image _ibg"><img src="img/green/02.jpg"
+                                        alt="column-tab__image"></div>
+                                <div class="tab__slider">
+                                    <div class="tab-content__item">
+                                        <div class="body_column-tab__text">Цена, по которой домохозяйства могут продать
+                                            электроэнергию, более чем в 10 раз превышает цену, по которой они ее
+                                            покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+                                    </div>
+                                    <div class="tab-content__item">
+                                        <div class="body_column-tab__text">Это проект, поддерживаемый международными
+                                            инвестиционными организациями(продажа).</div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+
                             <div id="tab-2" class="column-tab__body body_column-tab tab__content hidden-tab-content">
-                                <div class="body_column-tab__image _ibg"><img src="img/green/02.jpg" alt="column-tab__image"></div>
-                                <div class="body_column-tab__text">Та самая, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+                                <div class="body_column-tab__image _ibg"><img src="img/green/05.jpg"
+                                        alt="column-tab__image"></div>
+                                <div class="tab__slider">
+                                    <div class="tab-content__item">
+                                        <div class="body_column-tab__text">Монтаж производится в точном соответствии с
+                                            ГОСТом, с учетом закона о «Зеленом тарифе» и требованиями Облэнерго.
+                                            (закрепление).</div>
+                                    </div>
+                                    <div class="tab-content__item">
+                                        <div class="body_column-tab__text">Всю бюрократическую процедуру по подключению
+                                            Вашей электростанции к «Зеленому тарифу», мы берем на себя (закрепление).
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div id="tab-3" class="column-tab__body body_column-tab tab__content hidden-tab-content">
-                                <div class="body_column-tab__image _ibg"><img src="img/green/05.jpg" alt="column-tab__image"></div>
-                                <div class="body_column-tab__text">3Та самая, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+                                <div class="body_column-tab__image _ibg"><img src="img/green/09.jpg"
+                                        alt="column-tab__image"></div>
+                                <div class="tab__slider">
+                                    <div class="tab-content__item">
+                                        <div class="body_column-tab__text">При заказе солнечной электростанции эта
+                                            услуга абсолютно бесплатна.0,16 Евро/кВт (ограничения).</div>
+                                    </div>
+                                    <div class="tab-content__item">
+                                        <div class="body_column-tab__text">Мы просчитываем более 10- 15 вариантов
+                                            солнечной станции на Вашем участке, чтобы предложить Вам один наиболее
+                                            выгодный. (ограничения).</div>
+                                    </div>
+                                </div>
                             </div>
-                        
-                      
+
                             <div class="column-tab__advantages advantages">
                                 <div class="advantages__row">
-                               
+
                                     <div class="advantages__column-left">
-                                        <div class="column-left__row"> 
-                                        <div class="advantages__item item-advantages">
-                                            <div class="item-advantages__title">Гарантия выкупа</div>
-                                            <div class="item-advantages__text">Гарантированный выкуп электроэнергии государством - прописано в НКРЕ №447</div>
+                                        <div class="column-left__row">
+                                            <div class="advantages__item item-advantages">
+                                                <div class="item-advantages__title">Гарантия выкупа</div>
+                                                <div class="item-advantages__text">Гарантированный выкуп электроэнергии
+                                                    государством - прописано в НКРЕ №447</div>
+                                            </div>
+                                            <div class="advantages__item item-advantages">
+                                                <div class="item-advantages__title">Вид вложения</div>
+                                                <div class="item-advantages__text">Альтернатива банковским депозитам,
+                                                    окупаемость - от 16% до 18% годовых</div>
+                                            </div>
                                         </div>
-                                        <div class="advantages__item item-advantages">
-                                            <div class="item-advantages__title">Вид вложения</div>
-                                            <div class="item-advantages__text">Альтернатива банковским депозитам, окупаемость - от 16% до 18% годовых</div>
-                                        </div>
-                                    </div>
                                     </div>
                                     <div class="advantages__column-right">
-                                        <div class="column-right__row"> 
-                                        <div class="advantages__item item-advantages">
-                                            <div class="item-advantages__title">Долгосрочно</div>
-                                            <div class="item-advantages__text">Это проект, поддерживаемый международными инвестиционными организациями</div>
+                                        <div class="column-right__row">
+                                            <div class="advantages__item item-advantages">
+                                                <div class="item-advantages__title">Долгосрочно</div>
+                                                <div class="item-advantages__text">Это проект, поддерживаемый
+                                                    международными инвестиционными организациями</div>
+                                            </div>
+                                            <div class="advantages__item item-advantages">
+                                                <div class="item-advantages__title">Высокая ставка</div>
+                                                <div class="item-advantages__text">Самая высокая тарифная ставка в
+                                                    европе - 0,16 евро</div>
+                                            </div>
                                         </div>
-                                        <div class="advantages__item item-advantages">
-                                            <div class="item-advantages__title">Высокая ставка</div>
-                                            <div class="item-advantages__text">Самая высокая тарифная ставка в европе - 0,16 евро</div>
-                                        </div>
-                                    </div>
                                     </div>
 
 
                                 </div>
                             </div>
-                       
+
                         </div>
 
                         <div class="info-green__column column-info-green">
-                            <div class="column-info-green__text">«Зеленый тариф» — это особые тарифные условия, которые позволяют частным домохозяйствам  не только потреблять, но и продавать выработанное домашними солнечными электростанциями электричество в электросеть общего пользования.</div>
-                        <div class="column-info-green__image _ibg"><img src="img/green/03.jpg" alt="green"></div>
+                            <div class="column-info-green__text">«Зеленый тариф» — это особые тарифные условия, которые
+                                позволяют частным домохозяйствам не только потреблять, но и продавать выработанное
+                                домашними солнечными электростанциями электричество в электросеть общего пользования.
+                            </div>
+                            <div class="column-info-green__image _ibg"><img src="img/green/03.jpg" alt="green"></div>
                         </div>
                     </div>
                 </div>
@@ -194,60 +234,86 @@
 
             <div class="page__clients clients-page">
                 <div class="clients-page__container">
-                    <div class="clients-page__title title">НАШИ КЛИЕНТЫ</div> 
+                    <div class="clients-page__title title">НАШИ КЛИЕНТЫ</div>
 
 
 
-                    <div class="slider"><!--СЛАЙДЕР-->
+                    <div class="slider">
+                        <!--СЛАЙДЕР-->
 
-                    <div class="clients-page__item item-client"><!--СЛАЙД-->
-                    <div class="clients-page__body"><!--client-body--><!--BODY FLEX-->
-                        <div class="clients-page__image _ibg"><img src="img/clients/01.jpg" alt="clients"></div>
-                        <div class="clients-page__description description-block">
-                            <div class="description-block__title">Солнечная электростанция 30 кВт подключенная по Зеленому Тарифу</div>
-                           <ul class="description-block__list">
-                            <li class="description-block__item">Расположение: Харьковская обл., г. Харьков</li>
-                            <li class="description-block__item">Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $.</li>
-                            <li class="description-block__item">Смонтирована: апрель 2017 г.</li>
-                            <li class="description-block__item">Срок службы: 25-30 лет</li>
-                           </ul>
-                           <a href="#!" class="description-block__link"><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M70.7071 50.7071C71.0976 50.3166 71.0976 49.6834 70.7071 49.2929L64.3431 42.9289C63.9526 42.5384 63.3195 42.5384 62.9289 42.9289C62.5384 43.3195 62.5384 43.9526 62.9289 44.3431L68.5858 50L62.9289 55.6569C62.5384 56.0474 62.5384 56.6805 62.9289 57.0711C63.3195 57.4616 63.9526 57.4616 64.3431 57.0711L70.7071 50.7071ZM30 51H70V49H30V51Z" fill="#303030"/>
-                            <circle cx="50" cy="50" r="49" stroke="#303030" stroke-width="2"/>
-                            </svg> записаться на консультацию 
-                            </a>
+                        <div class="clients-page__item item-client">
+                            <!--СЛАЙД-->
+                            <div class="clients-page__body">
+                                <!--client-body-->
+                                <!--BODY FLEX-->
+                                <div class="clients-page__image _ibg"><img src="img/clients/01.jpg" alt="clients"></div>
+                                <div class="clients-page__description description-block">
+                                    <div class="description-block__title">Солнечная электростанция 30 кВт подключенная
+                                        по Зеленому Тарифу</div>
+                                    <ul class="description-block__list">
+                                        <li class="description-block__item">Расположение: Харьковская обл., г. Харьков
+                                        </li>
+                                        <li class="description-block__item">Чистый доход за вычетом налогов с мая 2017
+                                            г. по май 2019 г. 13 900 $.</li>
+                                        <li class="description-block__item">Смонтирована: апрель 2017 г.</li>
+                                        <li class="description-block__item">Срок службы: 25-30 лет</li>
+                                    </ul>
+                                    <a href="#!" class="description-block__link"><svg width="100" height="100"
+                                            viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M70.7071 50.7071C71.0976 50.3166 71.0976 49.6834 70.7071 49.2929L64.3431 42.9289C63.9526 42.5384 63.3195 42.5384 62.9289 42.9289C62.5384 43.3195 62.5384 43.9526 62.9289 44.3431L68.5858 50L62.9289 55.6569C62.5384 56.0474 62.5384 56.6805 62.9289 57.0711C63.3195 57.4616 63.9526 57.4616 64.3431 57.0711L70.7071 50.7071ZM30 51H70V49H30V51Z"
+                                                fill="#303030" />
+                                            <circle cx="50" cy="50" r="49" stroke="#303030" stroke-width="2" />
+                                        </svg> записаться на консультацию
+                                    </a>
+                                </div>
+                            </div>
+                            <!--client-body-->
+                            <!--BODY FLEX-->
                         </div>
-                    </div><!--client-body--><!--BODY FLEX-->
-                </div><!--СЛАЙД-->
+                        <!--СЛАЙД-->
 
-                <div class="clients-page__item item-client"><!--СЛАЙД-->
-                    <div class="clients-page__body"><!--client-body--><!--BODY FLEX-->
-                        <div class="clients-page__image _ibg"><img src="img/green/010.jpg" alt="clients"></div>
-                        <div class="clients-page__description description-block">
-                            <div class="description-block__title">Вторая электростанция 30 кВт подключенная по Зеленому Тарифу</div>
-                           <ul class="description-block__list">
-                            <li class="description-block__item">Расположение: Харьковская обл., г. Харьков</li>
-                            <li class="description-block__item">Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $.</li>
-                            <li class="description-block__item">Смонтирована: апрель 2017 г.</li>
-                            <li class="description-block__item">Срок службы: 25-30 лет</li>
-                           </ul>
-                           <a href="#!" class="description-block__link"><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M70.7071 50.7071C71.0976 50.3166 71.0976 49.6834 70.7071 49.2929L64.3431 42.9289C63.9526 42.5384 63.3195 42.5384 62.9289 42.9289C62.5384 43.3195 62.5384 43.9526 62.9289 44.3431L68.5858 50L62.9289 55.6569C62.5384 56.0474 62.5384 56.6805 62.9289 57.0711C63.3195 57.4616 63.9526 57.4616 64.3431 57.0711L70.7071 50.7071ZM30 51H70V49H30V51Z" fill="#303030"/>
-                            <circle cx="50" cy="50" r="49" stroke="#303030" stroke-width="2"/>
-                            </svg> записаться на консультацию 
-                            </a>
+                        <div class="clients-page__item item-client">
+                            <!--СЛАЙД-->
+                            <div class="clients-page__body">
+                                <!--client-body-->
+                                <!--BODY FLEX-->
+                                <div class="clients-page__image _ibg"><img src="img/green/010.jpg" alt="clients"></div>
+                                <div class="clients-page__description description-block">
+                                    <div class="description-block__title">Вторая электростанция 30 кВт подключенная по
+                                        Зеленому Тарифу</div>
+                                    <ul class="description-block__list">
+                                        <li class="description-block__item">Расположение: Харьковская обл., г. Харьков
+                                        </li>
+                                        <li class="description-block__item">Чистый доход за вычетом налогов с мая 2017
+                                            г. по май 2019 г. 13 900 $.</li>
+                                        <li class="description-block__item">Смонтирована: апрель 2017 г.</li>
+                                        <li class="description-block__item">Срок службы: 25-30 лет</li>
+                                    </ul>
+                                    <a href="#!" class="description-block__link"><svg width="100" height="100"
+                                            viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M70.7071 50.7071C71.0976 50.3166 71.0976 49.6834 70.7071 49.2929L64.3431 42.9289C63.9526 42.5384 63.3195 42.5384 62.9289 42.9289C62.5384 43.3195 62.5384 43.9526 62.9289 44.3431L68.5858 50L62.9289 55.6569C62.5384 56.0474 62.5384 56.6805 62.9289 57.0711C63.3195 57.4616 63.9526 57.4616 64.3431 57.0711L70.7071 50.7071ZM30 51H70V49H30V51Z"
+                                                fill="#303030" />
+                                            <circle cx="50" cy="50" r="49" stroke="#303030" stroke-width="2" />
+                                        </svg> записаться на консультацию
+                                    </a>
+                                </div>
+                            </div>
+                            <!--client-body-->
+                            <!--BODY FLEX-->
                         </div>
-                    </div><!--client-body--><!--BODY FLEX-->
-                </div><!--СЛАЙД-->
+                        <!--СЛАЙД-->
 
 
-            </div><!--СЛАЙДЕР-->
+                    </div>
+                    <!--СЛАЙДЕР-->
 
 
 
 
 
-                    
+
                 </div>
             </div>
 
@@ -298,14 +364,57 @@
 
         </main>
         <footer class="footer">
-
+            <div class="footer-cover__image _ibg"><img src="img/footer/01.png" alt="footer-cover"></div>
+      <div class="footer__container">    
+            <div class="footer__body body-footer">
+                <div class="body-footer__top top-footer">
+                    <div class="top-footer__row">
+                        <form action="#!" class="footer__form">
+                            <div class="footer-form__title footer-title">ОСТАВИТЬ ЗАЯВКУ</div>
+                            <input type="text" name="name" placeholder="Имя">
+                            <input type="text" name="phone" placeholder="Телефон">
+                         <div class="action__form"><button type="submit">оставить заявку</button> <svg width="100" height="100"
+                            viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M70.7071 50.7071C71.0976 50.3166 71.0976 49.6834 70.7071 49.2929L64.3431 42.9289C63.9526 42.5384 63.3195 42.5384 62.9289 42.9289C62.5384 43.3195 62.5384 43.9526 62.9289 44.3431L68.5858 50L62.9289 55.6569C62.5384 56.0474 62.5384 56.6805 62.9289 57.0711C63.3195 57.4616 63.9526 57.4616 64.3431 57.0711L70.7071 50.7071ZM30 51H70V49H30V51Z"
+                                fill="#fff" />
+                            <circle cx="50" cy="50" r="49" stroke="#fff" stroke-width="2" />
+                        </svg> </div> 
+                        </form>
+                        <div class="footer-contacts__info info-contacts">
+                            <div class="info-contacts__title footer-title">КОНТАКТЫ</div>
+                            <div class="info-contacts__body">
+                                <div class="info-contacts__item">Центральный офис: <br> г. Москва, ул,Гоголя 13, 1й этаж </div>
+                                <div class="info-contacts__item">Представительство в Киеве: <br> г. Киев, ул. Є. Коновальця, 103 оф. 410 </div>
+                                <div class="info-contacts__item">Представительства в Харькове, Одессе, Ростове, Сочи, Белгороде</div>
+                                <div class="info-contacts__item">+7 987 654-54-56 <br> +38 067 504-32-57</div>
+                                <div class="info-contacts__item">Ежедневно 08:00 - 20:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-footer__bottom bottom-footer">
+                    <div class="bottom-footer__row">
+                        <a href="#!" class="footer__link">Политика конфиденциальности</a>
+                        <a href="#!" class="footer__logo"><img src="img/footer/logo.svg" alt="footer__logo"></a>
+                        <div class="footer__socials socials-footer">
+                            <a href="#!" class="socials-footer__item"><img src="img/icons/02.svg" alt=""></a>
+                            <a href="#!" class="socials-footer__item"><img src="img/icons/03.svg" alt=""></a>
+                            <a href="#!" class="socials-footer__item"><img src="img/icons/04.svg" alt=""></a>
+                            <a href="#!" class="socials-footer__item"><img src="img/icons/01.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
         </footer>
     </div>
 
     <script src="js/jquery-3.6.3.js"></script>
     <script src="js/slick.min.js"></script>
- <script src="js/script.js"></script>
- 
+    <!--<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>-->
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
