@@ -11,7 +11,7 @@
         arrows:true,
         slidesToShow: 1,
         autoplay:false,
-         speed:3000,
+         speed:800,
          autoplaySpeed:800,
            responsive:[
            {
@@ -24,6 +24,15 @@
       });
      });
 
+     $(document).ready(function () {
+      $('.tab__slider').slick({
+        arrows:true,
+        slidesToShow: 1,
+        autoplay:false,
+         speed:800,
+         autoplaySpeed:1800,
+      });
+     });
      
 // ========== Переменные для "tabo'v" ==========
 const tabsTitle = document.querySelectorAll('.column-tab__title');
