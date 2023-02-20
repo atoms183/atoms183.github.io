@@ -427,7 +427,7 @@ main {
   line-height: 135%;
   color: #2E373B;
 }
-.item-event__title {
+.item-event__title a {
   font-weight: 500;
   font-size: 21px;
   line-height: 130%;
