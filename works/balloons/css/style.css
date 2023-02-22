@@ -914,6 +914,9 @@ main {
   line-height: 21px;
   color: #5E5E5E;
 }
+.social-footer__title a {
+  padding: 0 15px 0 0;
+}
 
 @media (max-width: 1370px) {
   .page-shares__item, .page-liders__item {
