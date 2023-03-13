@@ -1041,7 +1041,9 @@ main {
 .form-back {
   resize: none;
 }
-
+.footer{
+  padding-bottom:15px;
+}
 .footer__copy {
   font-family: "Gotham";
   font-weight: 700;
