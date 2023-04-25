@@ -1,0 +1,159 @@
+@media (max-width: 1100px) {
+  .help__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .help__content {
+    max-width: 100%;
+  }
+  .help__image {
+    max-width: 470px;
+  }
+  .content-help__title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .item-direction__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .item-direction__content {
+    max-width: 100%;
+  }
+  .item-direction__image {
+    margin: 0 auto;
+  }
+  .footer__body {
+    text-align: center;
+  }
+  .info-footer_socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .about__content {
+    max-width: 100%;
+  }
+  .about__image {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+@media (max-width: 992px) {
+  .cover {
+    padding-bottom: 55px;
+  }
+  .cover__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .cover__content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .cover__image {
+    max-width: 780px;
+    max-height: 295px;
+  }
+  .contacts__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 35px;
+  }
+  .contacts__item {
+    max-width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .our-project {
+    padding-bottom: 50px;
+  }
+  .our-project__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 56px 60px 55px;
+  }
+  .our-project__image {
+    max-width: 325px;
+  }
+  .our-project__content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .theatrestudio__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 35px;
+  }
+  .task-theatrestudio__title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .column-task__text {
+    max-width: 100%;
+  }
+  .students, .teachers {
+    padding: 0 35px 45px 35px;
+  }
+}
+@media (max-width: 670px) {
+  .directions {
+    padding-bottom: 40px;
+  }
+  .directions__body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 580px) {
+  .header__btn {
+    padding: 10px 12px;
+  }
+  .header__logo {
+    max-width: 105px;
+  }
+  .title {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .help__title {
+    margin-bottom: 30px;
+  }
+  .directions {
+    padding-bottom: 50px;
+  }
+  .directions__title {
+    margin-bottom: 30px;
+  }
+  .news {
+    padding-bottom: 50px;
+  }
+  .news__title {
+    margin-bottom: 30px;
+  }
+  .students__title, .teachers__title {
+    margin-bottom: 30px;
+  }
+}
