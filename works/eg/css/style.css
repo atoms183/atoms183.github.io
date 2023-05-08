@@ -794,6 +794,9 @@ a.active::after {
 .item-contacts__text {
   font-size: 20px;
 }
+.item-contacts__text a {
+  color: #514b4b;
+}
 .item-contacts__map {
   width: 100%;
   max-width: 725px;
