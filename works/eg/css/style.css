@@ -153,7 +153,7 @@ main {
   text-align: center;
 }
 .header__logo img {
-  max-width: 205px;
+  max-width: 100px;
 }
 .header__logo_sublogo {
   display: none;
@@ -220,11 +220,12 @@ main {
   top: -2px;
   max-width: 30px;
 }
-.info-head__worktime {
+.info-head__worktime, .info-head__marketplace {
   font-size: 14px;
+  color: #514b4b;
   font-weight: 500;
 }
-.info-head__worktime img {
+.info-head__worktime img, .info-head__marketplace img {
   padding-right: 10px;
   position: relative;
   top: -2px;
@@ -353,7 +354,6 @@ a.active::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 25px;
-  padding-top: 65px;
 }
 .mainblock__content {
   max-width: 795px;
@@ -517,6 +517,11 @@ a.active::after {
   gap: 25px;
   margin-bottom: 70px;
 }
+.content-mainblock_text-area {
+  background-color: #e8e9ea;
+  border-radius: 7px;
+  padding: 35px;
+}
 
 .mainblock-product__item {
   display: -webkit-box;
@@ -606,7 +611,7 @@ a.active::after {
 }
 .info-product__cover-logo {
   margin: 0 auto 25px auto;
-  max-width: 205px;
+  max-width: 75px;
 }
 .info-product__row {
   display: -webkit-box;
@@ -758,9 +763,8 @@ a.active::after {
 
 .content-mainblock__photos-body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(235px, 250px));
   gap: 20px;
-  text-align: center;
 }
 .content-mainblock__contacts-body {
   display: -webkit-box;
@@ -796,6 +800,10 @@ a.active::after {
 }
 .item-contacts__text a {
   color: #514b4b;
+}
+.item-contacts__text a img {
+  position: relative;
+  top: 2px;
 }
 .item-contacts__map {
   width: 100%;
@@ -964,9 +972,6 @@ a.active::after {
   .content-mainblock__product-body {
     grid-template-columns: repeat(1, 1fr);
   }
-  .item-product__image img {
-    max-height: 100%;
-}
 }
 @media (max-width: 420px) {
   .item-product__info {
@@ -1004,7 +1009,7 @@ a.active::after {
     transition: all 0.3s ease 0s;
   }
   .header__burger:before,
-  .header__burger:after {
+.header__burger:after {
     content: "";
     background-color: #ffffff;
     position: absolute;
@@ -1075,7 +1080,7 @@ a.active::after {
   .menu__link {
     font-weight: 400;
     color: #514b4b;
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
   }
 }
