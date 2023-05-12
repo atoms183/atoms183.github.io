@@ -546,7 +546,7 @@ a.active::after {
   min-height: 100%;
 }
 .item-product__image img {
-  max-height: 140px;
+  max-height: 185px;
 }
 .item-product__link {
   width: 100%;
@@ -972,6 +972,9 @@ a.active::after {
   .content-mainblock__product-body {
     grid-template-columns: repeat(1, 1fr);
   }
+  .item-product__image img {
+    max-height: 100%;
+  }
 }
 @media (max-width: 420px) {
   .item-product__info {
@@ -1080,7 +1083,7 @@ a.active::after {
   .menu__link {
     font-weight: 400;
     color: #514b4b;
-    font-size: 30px;
+    font-size: 24px;
     text-transform: uppercase;
   }
 }
