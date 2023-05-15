@@ -11,10 +11,11 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-	/*  autoplay: {
+	  effect: "fade",
+	  autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-      },*/
+      },
   });
 
   $(document).ready(function(){
