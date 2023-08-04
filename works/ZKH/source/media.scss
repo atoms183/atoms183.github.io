@@ -1,0 +1,136 @@
+@media (max-width:1220px){
+.about{
+    &__body{
+        flex-direction: column;
+        gap:40px;
+        align-items: center;
+    }
+}
+}//END MEDIA 1220px
+
+@media (max-width: 1100px) {
+    .item-news-list__content{
+        max-width: 100%;
+    }
+    .news-list__item{
+        flex-direction: column-reverse;
+    }
+    .item-news-list__image{
+        max-width: 570px;
+    }
+}//END MEDIA 1100px
+
+
+@media (max-width:1085px) {
+    .service-input__item{
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:992px){
+    .payment__top{
+        flex-direction: column;
+        gap:45px;
+    }
+    .normativedocs__body{
+        flex-direction: column-reverse;
+        gap:25px;
+    }
+    .normativedocs__image{
+        max-width: 340px;
+        margin: 0 auto;
+    }
+}//END MEDIA 992px
+
+@media (max-width: 768px) {
+    .cover{
+        &__action{
+            display: flex;
+            flex-direction: column;
+        }
+        &__labels{
+            position: static;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        &__image {
+            margin-bottom: 0px;
+        
+        }
+    }
+    .label-cover__titles{
+        max-width: 100%;
+        background-color: transparent;
+    }
+    .cover-titles__title{
+        color: #000;
+    }
+    .cover-titles__sub-title{
+        color: #000;
+    }
+}//END MEDIA 768px
+
+@media (max-width:700px){
+.news{
+    &__body {
+		grid-template-columns: repeat(1, 1fr);
+	}
+    &__item{
+        max-width: 100%;
+    }
+}
+.item-info-general__top{
+    min-height: auto;
+}
+.general-info__body {
+    grid-template-columns: repeat(1, 1fr);
+}
+.bottom-payment__form {
+    padding: 20px 15px;
+}
+.answers {
+	// .answers__title
+
+	&__title {
+		font-size: 24px;
+	}
+
+	// .answers__sub-title
+
+	&__sub-title {
+		font-size: 20px;
+ }
+}
+.content-answers__title{
+    padding-left: 55px;
+}
+.content-answers__text{
+    padding: 0;
+}
+}//END MEDIA 700px
+
+@media (max-width:580px){
+
+}//END MEDIA 580px
+
+@media (max-width:420px){
+    .form-payment__inputs{
+        grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    }
+    .content-payment-top__title{
+        font-size: 35px;
+    }
+    .form-payment__title{
+        font-size: 35px;
+    }
+
+}//END MEDIA 420px
+
+
+@media (max-width:280px){
+
+}//END MEDIA 280px
+
+
