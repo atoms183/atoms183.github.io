@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Архив работ</title>
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div class="wrapper">
+	<header id="header" class="header lock-padding">
+		<div class="header__container">
+			<div class="header__inner">
+				<div class="header__top top-header">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<a href="index.html" class="top-header__logo"><img src="img/cover/logo.svg" alt=""></a>
+					<div class="header__action action-header">
+						<a href="#popup-search" class="action-header__search popup-link"><img src="img/icons/search.svg" alt=""></a>
+						<div class="popup" id="popup-search">
+							<div class="popup__body">
+								<div class="popup__content content-search-popup">
+									<a class="popup__close close-popup">X</a>
+									<div class="popup__logo"><img src="img/cover/logo.svg" alt=""></div>
+											<form action="#" class="popup-search-form form-search">
+												<div class="form-search__input">
+													<input type="text" placeholder="Введите запрос">
+												</div>
+												<div class="form-search__button">
+													<button type="submit">Найти</button>
+												</div>
+											</form>
+								</div>
+							</div>
+						 </div> 
+						<div class="action-header__lang lang-header">
+							<a href="#!" class="lang-header__item lang-header__item_active">Ru</a>
+							<a href="#!" class="lang-header__item">En</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom bottom-header">
+					<nav class="bottom-header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__link">Уличное искусство</a>
+								<span class="menu__arrow"></span>
+								<ul class="menu__sub-list">
+									<li><a href="works-archive.html" class="menu__sub-link">Архив работ</a></li>
+									<li><a href="artists.html" class="menu__sub-link">Художники</a></li>
+									<li><a href="video-archive.html" class="menu__sub-link">Видео</a></li>
+									<li><a href="research.html" class="menu__sub-link">Исследование</a></li>
+									<li><a href="personal-archhive.html" class="menu__sub-link">Личные архивы</a></li>
+								</ul>
+							</li>
+							<li class="menu__item"><a href="routes.html" class="menu__link">Маршруты</a></li>
+							<li class="menu__item">
+								<a class="menu__link">Новости</a>
+								<span class="menu__arrow"></span>
+								<ul class="menu__sub-list">
+									<li><a href="news.html" class="menu__sub-link">Новости</a></li>
+									<li><a href="afisha.html" class="menu__sub-link">Афиша</a></li>
+								</ul>
+							</li>
+							<li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+ 	</header>  
+
+ 	<main class="main main-decor">
+ 		 <div class="works-archive">
+			<div class="works-archive__container">
+				<div class="works-archive__label main-label">Занимаемся поставками инженерного оборудования, организуем их проектирование, строительство и реконструкцию. Разрабатываем и воплощаем проекты сооружений всех классов. Фиксируем стоимость до начала работ. Наше преимущество — утонченный стиль, простота в эксплуатации, долговечность. Практично и со вкусом строим экономичные в эксплуатации системы прудов на всю жизнь.</div>
+				<div class="works-archive__title title">Архив Работ</div>
+				<div class="works-archive__body">
+					<div class="works-archive__action-nav nav-action-archive">
+						<div class="nav-action-archive__item item-arhive-action">
+							<div class="item-arhive-action__label">Выбрать год</div>
+							<form action="#" class="item-arhive-action__form form-archive-action">
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check" class="form-archive-action__title">Начало 90-ых</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check2" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check2" class="form-archive-action__title">2000</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check3" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check3" class="form-archive-action__title">2000-2010</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check4" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check4" class="form-archive-action__title">2010 - по настоящее</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check5" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check5" class="form-archive-action__title">Год не известен</label> 
+								</div>
+							</form>
+						</div>
+
+						<div class="nav-action-archive__item item-arhive-action">
+							<div class="item-arhive-action__label">Вид искусства</div>
+							<form action="#" class="item-arhive-action__form form-archive-action">
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check6" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check6" class="form-archive-action__title">Граффити</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check7" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check7" class="form-archive-action__title">Стрит-арт</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check8" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check8" class="form-archive-action__title">Паблик-арт</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check9" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check9" class="form-archive-action__title">Жэк-арт</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check10" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check10" class="form-archive-action__title">Событие</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check11" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check11" class="form-archive-action__title">Локация</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check12" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check13" class="form-archive-action__title">В интерьере</label> 
+								</div>
+							</form>
+						</div>
+
+						<div class="nav-action-archive__item item-arhive-action">
+							<div class="item-arhive-action__label">Город</div>
+							<form action="#" class="item-arhive-action__form form-archive-action">
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check14" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check14" class="form-archive-action__title">Город 1</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check15" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check15" class="form-archive-action__title">Город 2</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check16" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check16" class="form-archive-action__title">Город 3</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check17" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check17" class="form-archive-action__title">Город 4</label> 
+								</div>
+								
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check18" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check18" class="form-archive-action__title">Город 5</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check19" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check19" class="form-archive-action__title">Город 6</label> 
+								</div>
+								<div class="form-archive-action__checkbox">
+									<input type="checkbox" id="check20" class="custom-checkbox" name="text" value="yes"> 
+									<label for="check20" class="form-archive-action__title">Город 7</label> 
+								</div>
+							</form>
+						</div>
+
+					</div>
+					<div class="research__body body-column-items">
+						<div class="research__item item-research">
+							<div class="item-research__image _ibg">
+								<img src="img/research/01.jpg" alt="">
+							</div>
+							<div class="item-research__content content-research">
+								<div class="content-research__top">
+								<a href="works-archive-detail.html" class="content-research__title content-main-column__title">Dikey & Shipa 2018. Мечтатели</a>
+								<div class="content-research__text content-main-column__text">Наше преимущество — утонченный стиль, простота в эксплуатации, долговечность. Практично и со вкусом строим экономичные в эксплуатации системы прудов на всю жизнь.</div>
+							</div>
+							<div class="content-research__bottom">
+								<div class="content-research__person-info info-person-research">
+									<div class="info-person-research__author-label  info-column-item__label">Автор:</div>
+									<a href="artist.html" class="info-person-research__author-name">Владимир Евгеньевич</a>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-year-research__year-label  info-column-item__label">Год:</div>
+									<div class="info-year-research__year-value">1991</div>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-artform-research__artform-label info-column-item__label">Вид искусства:</div>
+									<div class="info-artform-research_artformr-value">Граффити</div>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-artform-research__artform-label info-column-item__label">Город</div>
+									<div class="info-artform-research_artformr-value">Чикаго</div>
+								</div>
+							</div>
+							</div>
+						</div>
+	
+						<div class="research__item item-research">
+							<div class="item-research__image _ibg">
+								<img src="img/research/02.jpg" alt="">
+							</div>
+							<div class="item-research__content content-research">
+								<div class="content-research__top">
+								<a href="#!" class="content-research__title content-main-column__title">Dikey & Shipa 2018. Мечтатели</a>
+								<div class="content-research__text content-main-column__text">Наше преимущество — утонченный стиль, простота в эксплуатации, долговечность. Практично и со вкусом строим экономичные в эксплуатации системы прудов на всю жизнь.</div>
+							</div>
+							<div class="content-research__bottom">
+								<div class="content-research__person-info info-person-research">
+									<div class="info-person-research__author-label info-column-item__label">Автор:</div>
+									<a href="artist.html" class="info-person-research__author-name">Владимир Евгеньевич</a>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-year-research__year-label info-column-item__label">Год:</div>
+									<div class="info-year-research__year-value">1991</div>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-artform-research__artform-label info-column-item__label">Вид искусства:</div>
+									<div class="info-artform-research_artformr-value">Граффити</div>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-artform-research__artform-label info-column-item__label">Город</div>
+									<div class="info-artform-research_artformr-value">Чикаго</div>
+								</div>
+							</div>
+							</div>
+						</div>
+	
+						<div class="research__item item-research">
+							<div class="item-research__image _ibg">
+								<img src="img/research/03.jpg" alt="">
+							</div>
+							<div class="item-research__content content-research">
+								<div class="content-research__top">
+								<a href="#!" class="content-research__title content-main-column__title">Dikey & Shipa 2018. Мечтатели</a>
+								<div class="content-research__text content-main-column__text">Наше преимущество — утонченный стиль, простота в эксплуатации, долговечность. Практично и со вкусом строим экономичные в эксплуатации системы прудов на всю жизнь.</div>
+							</div>
+							<div class="content-research__bottom">
+								<div class="content-research__person-info info-person-research">
+									<div class="info-person-research__author-label  info-column-item__label">Автор:</div>
+									<a href="artist.html" class="info-person-research__author-name">Владимир Евгеньевич</a>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-year-research__year-label  info-column-item__label">Год:</div>
+									<div class="info-year-research__year-value">1991</div>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-artform-research__artform-label info-column-item__label">Вид искусства:</div>
+									<div class="info-artform-research_artformr-value">Граффити</div>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-artform-research__artform-label info-column-item__label">Город</div>
+									<div class="info-artform-research_artformr-value">Чикаго</div>
+								</div>
+							</div>
+							</div>
+						</div>
+	
+						<div class="research__item item-research">
+							<div class="item-research__image _ibg">
+								<img src="img/research/04.jpg" alt="">
+							</div>
+							<div class="item-research__content content-research">
+								<div class="content-research__top">
+								<a href="#!" class="content-research__title content-main-column__title">Dikey & Shipa 2018. Мечтатели</a>
+								<div class="content-research__text content-main-column__text">Наше преимущество — утонченный стиль, простота в эксплуатации, долговечность. Практично и со вкусом строим экономичные в эксплуатации системы прудов на всю жизнь.</div>
+							</div>
+							<div class="content-research__bottom">
+								<div class="content-research__person-info info-person-research">
+									<div class="info-person-research__author-label  info-column-item__label">Автор:</div>
+									<a href="artist.html" class="info-person-research__author-name">Владимир Евгеньевич</a>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-year-research__year-label  info-column-item__label">Год:</div>
+									<div class="info-year-research__year-value">1991</div>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-artform-research__artform-label info-column-item__label">Вид искусства:</div>
+									<div class="info-artform-research_artformr-value">Граффити</div>
+								</div>
+								<div class="content-research__year-info info-year-research">
+									<div class="info-artform-research__artform-label info-column-item__label">Город</div>
+									<div class="info-artform-research_artformr-value">Чикаго</div>
+								</div>
+							</div>
+							</div>
+						</div>
+	
+						<div class="pagination">
+							<div class="pagination__body">
+								<a href="#!" class="pagination__arrow"><img src="img/icons/arrow-left.svg" alt=""></a>
+								<ul class="pagination__list">
+									<a href="#!" class="pagination__item">1</a>
+									<a href="#!" class="pagination__item">2</a>
+									<a href="#!" class="pagination__item">3</a>
+									<a href="#!" class="pagination__item">4</a>
+									<a href="#!" class="pagination__item">5</a>
+								</ul>
+								<a href="#!" class="pagination__arrow"><img src="img/icons/arrow-right.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+			</div>
+		 </div>
+ 	</main>
+	
+ 	<footer class="footer">
+		<div class="footer__container">
+		   <div class="footer__body">
+			   <div class="footer__left-column column-footer-left">
+				   <div class="column-footer-left__body">
+					   <div class="column-footer-left__logo">
+						   <img src="img/cover/footerlogo.svg" alt="">
+					   </div>
+					   <div class="column-footer-left__label">
+						   Онлайн-архив и исследовательский проект, посвященный уличной культуре Архангельска
+					   </div>
+					   <a href="#!" class="column-footer-left__link main-btn">Задонатить на проект</a>
+					   <div class="column-footer-left__socials social-footer">
+						   <a href="#!" class="social-footer__link"><img src="img/icons/tg.svg" alt=""></a>
+						   <a href="#!" class="social-footer__link"><img src="img/icons/vk.svg" alt=""></a>
+						   <a href="#!" class="social-footer__link"><img src="img/icons/mail.svg" alt=""></a>
+					   </div>
+				   </div>
+			   </div>
+			   <div class="footer__right-column column-footer-right">
+				   <div class="column-footer-right__body">
+					   <div class="column-footer-right__item item-column-footer">
+						   <nav class="item-column-footer__menu menu-column-footer">
+							   <div class="menu-column-footer__title">Уличное искусство</div>
+							   <ul class="menu-column-footer__list">
+								   <li><a href="works-archive.html" class="menu-column-footer__link">Архив работ</a></li>
+								   <li><a href="artists.html" class="menu-column-footer__link">Художники</a></li>
+								   <li><a href="video-archive.html" class="menu-column-footer__link">Видео</a></li>
+								   <li><a href="research.html" class="menu-column-footer__link">Исследование</a></li>
+								   <li><a href="personal-archhive.html" class="menu-column-footer__link">Личные архивы</a></li>
+							   </ul>
+						   </nav>
+					   </div>
+					   <div class="column-footer-right__item item-column-footer">
+						   <nav class="item-column-footer__menu menu-column-footer">
+							   <div class="menu-column-footer__title">Новости</div>
+							   <ul class="menu-column-footer__list">
+								   <li><a href="news.html" class="menu-column-footer__link">Новости</a></li>
+								   <li><a href="afisha.html" class="menu-column-footer__link">Афиша</a></li>
+							   </ul>
+						   </nav>
+					   </div>
+					   <div class="column-footer-right__item item-column-footer">
+						   <nav class="item-column-footer__menu menu-column-footer">
+							   <a href="about.html" class="menu-column-footer__title">О нас</a>
+							   <!-- <ul class="menu-column-footer__list">
+								   <li><a href="#!" class="menu-column-footer__link"></a></li>
+							   </ul> -->
+						   </nav>
+					   </div>
+					   <div class="column-footer-right__item item-column-footer">
+						   <nav class="item-column-footer__menu menu-column-footer">
+							   <a href="routes.html" class="menu-column-footer__title">Маршруты</a>
+							   <!-- <ul class="menu-column-footer__list">
+								   <li><a href="#!" class="menu-column-footer__link"></a></li>
+							   </ul> -->
+						   </nav>
+					   </div>
+				   </div>
+			   </div>
+		   </div>
+		   <div class="footer__copy copy-footer">
+			   <div class="copy-footer__title">2022©CitySays. Все права защищены.</div>
+			   <div class="copy-footer__links">
+				   <a href="#!">Авторские права</a>
+				   <a href="#!">Политика конфиденциальности</a>
+			   </div>
+		   </div>
+	   </div>
+	</footer>
+ </div>
+
+ <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+ <script src="js/script.js"></script>
+</body>
+<!-- <div class="popup" id="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a class="popup__close close-popup">X</a>
+			<div class="popup__title">Модальное окно №1</div>
+			<div class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, error tempore aspernatur velit, aperiam earum quisquam sint</div>
+		</div>
+	</div>
+ </div> -->
+ <!-- <a href="#popup" class="header__search popup-link"><img src="img/icons/search.svg" alt=""></a> -->
+</html>
