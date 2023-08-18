@@ -1,0 +1,121 @@
+@media (max-width:1220px){
+
+}//END MEDIA 1220px
+
+@media (max-width: 1100px) {
+
+}//END MEDIA 1100px
+
+@media (max-width:992px){
+.title{
+    font-size: 24px;
+}
+.content-questions__title{
+ font-size: 24px;
+}
+.delivery-slogan__body{
+    grid-template-columns: repeat(1, 1fr);
+    gap:30px;
+}
+.delivery-slogan__item{
+    justify-content: center;
+}
+.delivery-slogan{
+padding: 35px 0;
+}
+.cover__title{
+    font-size: 60px;
+}
+.footer__top{
+    flex-direction: column;
+    gap: 35px;
+}
+.top-footer {
+
+    // .top-footer__item
+
+    &__item {
+        text-align: center;
+        &:nth-child(2){
+            position: relative;
+            left: 0;
+        }
+    }
+}
+.header__menu{
+        width: 100%!important;
+}
+.basket__item{
+    flex-direction: column;
+    gap:60px;
+    align-items: flex-start;
+}
+.item-basket__action{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+}
+.bottom-basket-action__right-labels{
+    display: none;
+}
+.basket-sub-action{
+    flex-direction: column;
+    gap:35px;
+    align-items: flex-start;
+}
+.action-header__item{
+    padding: 9px;
+}
+.action-header__log-in{
+    display: none;
+}
+}//END MEDIA 992px
+
+@media (max-width: 870px) {
+    .detail-page__body{
+        flex-direction: column;
+        align-items: center;
+    }
+}//END MEDIA 870px
+
+@media (max-width:670px){
+   .action-sub-basket__forms-item{
+    width: 100%;
+   }
+   .form-sub-action-basket__area textarea{
+    width: 100%;
+   }
+}//END MEDIA 670px
+
+@media (max-width:580px){
+    .cover__link{
+        font-size: 19px;
+    }
+    .item-basket__info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}//END MEDIA 580px
+
+@media (max-width:475px){
+    .form-subscribe__action{
+        min-width: 100%;
+    }
+    .form-write-us__input input{
+        width: 290px;
+    }
+    ._search-item{
+      display: none;
+    }
+
+.header__logo {
+    justify-self: baseline;
+}
+}//END MEDIA 470px
+
+
+@media (max-width:280px){
+
+}//END MEDIA 280px
+
+

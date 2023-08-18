@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Главная</title>
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/grid-gallery.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div class="wrapper">
+	<header id="header" class="header lock-padding">
+		<div class="header__container">
+			<div class="header__body">
+				<div class="header__burger left-column"><span></span></div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<div class="header__burger"><span></span></div>
+						<ul class="menu__list">
+							<li class="menu__item"><a href="search.html" class="menu__link">Поиск</a></li>
+							<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Каталог</a></li>
+							<li class="menu__item"><a href="collections.html" class="menu__link">Коллекции</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="index.html" class="header__logo"><img src="img/cover/logo.svg" alt=""></a>
+				<div class="header__action action-header">
+					<div class="action-header__log-in">
+						<a class="popup-link" href="#popup-registration">Войти</a>
+						<a class="popup-link" href="#popup-registration">Создать аккаунт</a>
+					</div>
+					<a href="search.html" class="action-header__item _search-item"><img src="img/icons/search-icon.svg" alt=""></a>
+					<div class="action-header__item">
+						<a href="basket.html"><img src="img/icons/basket-icon.svg" alt=""></a>
+						<span class="item-action__value-basket">112 350 ₽</span>
+						 <span class="item-action__count-items"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+							<path d="M1 7.16162C1 4.12406 3.46243 1.66162 6.5 1.66162C9.53757 1.66162 12 4.12406 12 7.16162C12 10.1992 9.53757 12.6616 6.5 12.6616C3.46243 12.6616 1 10.1992 1 7.16162Z" fill="#FFD1D7" stroke="#EDEDED" stroke-width="2"/>
+							</svg></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-registration">
+			<div class="popup__body">
+				<div class="popup__content content-registration-popup">
+					<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+					<div class="popup__logo"><img src="img/cover/logo2.svg" alt=""></div>
+					<form action="#" class="registration-popup__form form-registration">
+						<div class="form-registration__title">Войдите или зарегистрируйтесь, чтобы продолжить</div>
+						<div class="form-registration__input">
+							<input type="tel" required name="phone" maxlength="16" placeholder="+7(___)___-__-__"  id="phone"/>
+						</div>
+						<div class="form-registration__button">
+							<button type="submit">Подтвердить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		 </div>
+		 <div class="popup" id="addtobasket">
+			<div class="popup__body">
+				<div class="popup__content popup-addtobasket">
+					<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+					<div class="popup__logo"><img src="img/cover/logo2.svg" alt=""></div>
+					<div class="popup__title">Товар успешно добавлен в корзину</div>
+					<div class="popup__sub-title">Вы можете перейти к оформлению заказа или продолжить покупки</div>
+					<div class="popup__buttons">
+						<a class="close-popup main-btn" href="#">Продолжить покупки</a>
+						<a class="main-btn" href="basket.html">Перейти в корзину</a>
+					</div>
+				</div>
+			</div>
+		 </div>
+ 	</header>  
+
+ 	<main class="main">
+ 		 <div class="cover">
+			<div class="cover__container">
+				<div class="cover__body">
+						<h1 class="cover__title">Выбрать цветы на любой случай</h1>
+						<h2 class="cover__text">Наша цель - обеспечить доставку свежих цветов высочайшего качества в <span>Москве</span></h2>
+						<a class="cover__link" href="catalog.html">Открыть каталог</a>	 
+				</div>
+			</div>
+		 </div>
+		 <div class="delivery-slogan">
+			<div class="delivery-slogan__container">
+				<div class="delivery-slogan__body">
+					<div class="delivery-slogan__item item-delivery-slogan">
+						<div class="item-delivery-slogan__labels label-delivey-slogan">
+							<div class="label-delivey-slogan__title">Нужна доставка цветов сегодня?</div>
+							<div class="label-delivey-slogan__sub-title">Позвоните или напишите нам</div>
+						</div>
+						<div class="item-delivery-slogan__icon">
+							<img src="img/icons/delivery-icon01.svg" alt="">
+						</div>
+					</div>
+					<div class="delivery-slogan__item item-delivery-slogan">
+						<div class="item-delivery-slogan__labels label-delivey-slogan">
+							<div class="label-delivey-slogan__title">Бесплатная доставка в пределах 4 км.</div>
+							<div class="label-delivey-slogan__sub-title">Нет минимального заказа</div>
+						</div>
+						<div class="item-delivery-slogan__icon">
+							<img src="img/icons/delivery-icon02.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+		 <div class="top-rated">
+			<div class="top-rated__container">
+				<div class="top-rated__title title">САМЫЕ ПОПУЛЯРНЫЕ</div>
+				<div class="top-rated__body">
+					<div class="top-rated__item item-top-rated">
+						<div class="item-top-rated__image _ibg">
+							<img src="img/top-rated/01.jpg" alt="">
+						</div>
+						<div class="item-top-rated__row">
+							<div class="item-top-rated__info info-top-rated">
+								<a href="detail.html" class="info-top-rated__title">Кристалл (розовые гвоздики с миксом цветов)</a>
+								<div class="info-top-rated__price">4900 ₽</div>
+							</div>
+							<a href="#addtobasket" class="item-top-rated__button popup-link">В корзину</a>
+						</div>
+						<a href="#popup-quick-view01" class="item-catalog__quick popup-link">Быстрый просмотр</a>
+						<div class="popup" id="popup-quick-view01">
+							<div class="popup__body">
+								<div class="popup__content content-quick-view-popup">
+									<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+									<div class="content-quick-view-popup__container">
+										<div class="content-quick-view-popup__body">
+											<div class="content-quick-view-popup__item detail-page__swiper">
+												<div class="swiper-button-next arrow-next"></div>
+												<div class="detail-page__image-box swiper-wrapper">
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/top-rated/01.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/04.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/03.jpg" alt="">
+													</div>
+												</div>
+												<div class="swiper-button-prev arrow-prev"></div>
+											</div>
+											<div class="content-quick-view-popup__title">Кристалл (розовые гвоздики с миксом цветов)</div>
+											<div class="content-quick-view-popup__price">4900 ₽</div>
+											<div class="content-quick-view-popup__shipping-label">Стоимость доставки рассчитывается при оформлении</div>
+											<div class="content-quick-view-popup__size size-quick-item">
+												<div class="size-quick-item__title">Размер</div>
+												<form action="#" class="size-quick-item__form">
+													<div class="size-quick-item__input">
+														<p>Мал.</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Средний</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Большой</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Делюкс</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Премиум</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+												</form>
+											</div>
+											<div class="content-quick-view-popup__action-row row-quick-action">
+												<div class="row-quick-action__quantity quantity">
+													<div class="quantity__title">Количество</div>
+													<div class="quantity__amount amount">
+														<span class="amount__minus">-</span>
+														<input type="text" class="amount__field" value="1"/>
+														<span class="amount__plus">+</span>
+													</div>
+												</div>
+												<a href="#addtobasket" class="row-detail-action__basket-btn popup-link">В корзину</a>
+											</div>
+											<div class="content-quick-view-popup__available-title">Товар в наличии и доступен к доставке завтра</div>
+											<div class="content-quick-view-popup__payment"><img src="img/cover/sub-payment.jpg" alt=""></div>
+										</div>
+									</div>
+								
+									
+								</div>
+							</div>
+						 </div>
+					</div>
+					<div class="top-rated__item item-top-rated">
+						<div class="item-top-rated__image _ibg">
+							<img src="img/top-rated/02.jpg" alt="">
+						</div>
+						<div class="item-top-rated__row">
+							<div class="item-top-rated__info info-top-rated">
+								<a href="detail.html" class="info-top-rated__title">Милана (букет с садовыми розами)</a>
+								<div class="info-top-rated__price">6450 ₽</div>
+							</div>
+							<a class="item-top-rated__button _pink">Распродано</a>
+						</div>
+						<a href="#popup-quick-view02" class="item-catalog__quick popup-link">Быстрый просмотр</a>
+						<div class="popup" id="popup-quick-view02">
+							<div class="popup__body">
+								<div class="popup__content content-quick-view-popup">
+									<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+									<div class="content-quick-view-popup__container">
+										<div class="content-quick-view-popup__body">
+											<div class="content-quick-view-popup__item detail-page__swiper">
+												<div class="swiper-button-next arrow-next"></div>
+												<div class="detail-page__image-box swiper-wrapper">
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/top-rated/05.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/04.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/03.jpg" alt="">
+													</div>
+												</div>
+												<div class="swiper-button-prev arrow-prev"></div>
+											</div>
+											<div class="content-quick-view-popup__title">Милана (букет с садовыми розами)</div>
+											<div class="content-quick-view-popup__price">6450 ₽</div>
+											<div class="content-quick-view-popup__shipping-label">Стоимость доставки рассчитывается при оформлении</div>
+											<div class="content-quick-view-popup__size size-quick-item">
+												<div class="size-quick-item__title">Размер</div>
+												<form action="#" class="size-quick-item__form">
+													<div class="size-quick-item__input">
+														<p>Мал.</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Средний</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Большой</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Делюкс</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Премиум</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+												</form>
+											</div>
+											<div class="content-quick-view-popup__action-row row-quick-action">
+												<div class="row-quick-action__quantity quantity">
+													<div class="quantity__title">Количество</div>
+													<div class="quantity__amount amount">
+														<span class="amount__minus">-</span>
+														<input type="text" class="amount__field" value="1"/>
+														<span class="amount__plus">+</span>
+													</div>
+												</div>
+												<a href="#addtobasket" class="row-detail-action__basket-btn popup-link">В корзину</a>
+											</div>
+											<div class="content-quick-view-popup__available-title">Товар в наличии и доступен к доставке завтра</div>
+											<div class="content-quick-view-popup__payment"><img src="img/cover/sub-payment.jpg" alt=""></div>
+										</div>
+									</div>
+								
+									
+								</div>
+							</div>
+						 </div> 
+					</div>
+					<div class="top-rated__item item-top-rated">
+						<div class="item-top-rated__image _ibg">
+							<img src="img/top-rated/03.jpg" alt="">
+						</div>
+						<div class="item-top-rated__row">
+							<div class="item-top-rated__info info-top-rated">
+								<a href="detail.html" class="info-top-rated__title">Алмазный букет розовых роз</a>
+								<div class="info-top-rated__price">от 8000 ₽</div>
+							</div>
+							<a href="detail.html" class="item-top-rated__button">Смотреть</a>
+						</div>
+						<a href="#popup-quick-view03" class="item-catalog__quick popup-link">Быстрый просмотр</a>
+						<div class="popup" id="popup-quick-view03">
+							<div class="popup__body">
+								<div class="popup__content content-quick-view-popup">
+									<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+									<div class="content-quick-view-popup__container">
+										<div class="content-quick-view-popup__body">
+											<div class="content-quick-view-popup__item detail-page__swiper">
+												<div class="swiper-button-next arrow-next"></div>
+												<div class="detail-page__image-box swiper-wrapper">
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/top-rated/03.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/04.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/03.jpg" alt="">
+													</div>
+												</div>
+												<div class="swiper-button-prev arrow-prev"></div>
+											</div>
+											<div class="content-quick-view-popup__title">Алмазный букет розовых роз</div>
+											<div class="content-quick-view-popup__price">8000 ₽</div>
+											<div class="content-quick-view-popup__shipping-label">Стоимость доставки рассчитывается при оформлении</div>
+											<div class="content-quick-view-popup__size size-quick-item">
+												<div class="size-quick-item__title">Размер</div>
+												<form action="#" class="size-quick-item__form">
+													<div class="size-quick-item__input">
+														<p>Мал.</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Средний</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Большой</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Делюкс</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Премиум</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+												</form>
+											</div>
+											<div class="content-quick-view-popup__action-row row-quick-action">
+												<div class="row-quick-action__quantity quantity">
+													<div class="quantity__title">Количество</div>
+													<div class="quantity__amount amount">
+														<span class="amount__minus">-</span>
+														<input type="text" class="amount__field" value="1"/>
+														<span class="amount__plus">+</span>
+													</div>
+												</div>
+												<a href="#addtobasket" class="row-detail-action__basket-btn popup-link">В корзину</a>
+											</div>
+											<div class="content-quick-view-popup__available-title">Товар в наличии и доступен к доставке завтра</div>
+											<div class="content-quick-view-popup__payment"><img src="img/cover/sub-payment.jpg" alt=""></div>
+										</div>
+									</div>
+								
+									
+								</div>
+							</div>
+						 </div> 
+					</div>
+					<div class="top-rated__item item-top-rated">
+						<div class="item-top-rated__image _ibg">
+							<img src="img/top-rated/04.jpg" alt="">
+						</div>
+						<div class="item-top-rated__row">
+							<div class="item-top-rated__info info-top-rated">
+								<a href="detail.html" class="info-top-rated__title">Букет Гиацинт розовый</a>
+								<div class="info-top-rated__price">7000 ₽</div>
+							</div>
+							<a href="#addtobasket" class="item-top-rated__button popup-link">В корзину</a>
+						</div>
+						<a href="#popup-quick-view04" class="item-catalog__quick popup-link">Быстрый просмотр</a>
+						<div class="popup" id="popup-quick-view04">
+							<div class="popup__body">
+								<div class="popup__content content-quick-view-popup">
+									<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+									<div class="content-quick-view-popup__container">
+										<div class="content-quick-view-popup__body">
+											<div class="content-quick-view-popup__item detail-page__swiper">
+												<div class="swiper-button-next arrow-next"></div>
+												<div class="detail-page__image-box swiper-wrapper">
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/top-rated/05.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/04.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/03.jpg" alt="">
+													</div>
+												</div>
+												<div class="swiper-button-prev arrow-prev"></div>
+											</div>
+											<div class="content-quick-view-popup__title">Букет Гиацинт розовый</div>
+											<div class="content-quick-view-popup__price">5000 ₽</div>
+											<div class="content-quick-view-popup__shipping-label">Стоимость доставки рассчитывается при оформлении</div>
+											<div class="content-quick-view-popup__size size-quick-item">
+												<div class="size-quick-item__title">Размер</div>
+												<form action="#" class="size-quick-item__form">
+													<div class="size-quick-item__input">
+														<p>Мал.</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Средний</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Большой</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Делюкс</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Премиум</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+												</form>
+											</div>
+											<div class="content-quick-view-popup__action-row row-quick-action">
+												<div class="row-quick-action__quantity quantity">
+													<div class="quantity__title">Количество</div>
+													<div class="quantity__amount amount">
+														<span class="amount__minus">-</span>
+														<input type="text" class="amount__field" value="1"/>
+														<span class="amount__plus">+</span>
+													</div>
+												</div>
+												<a href="#addtobasket" class="row-detail-action__basket-btn popup-link">В корзину</a>
+											</div>
+											<div class="content-quick-view-popup__available-title">Товар в наличии и доступен к доставке завтра</div>
+											<div class="content-quick-view-popup__payment"><img src="img/cover/sub-payment.jpg" alt=""></div>
+										</div>
+									</div>
+								
+									
+								</div>
+							</div>
+						 </div> 
+					</div>
+					<div class="top-rated__item item-top-rated">
+						<div class="item-top-rated__image _ibg">
+							<img src="img/top-rated/05.jpg" alt="">
+						</div>
+						<div class="item-top-rated__row">
+							<div class="item-top-rated__info info-top-rated">
+								<a href="detail.html" class="info-top-rated__title">Букет роз кустовая одилия</a>
+								<div class="info-top-rated__price">от 5000 ₽</div>
+							</div>
+							<a href="detail.html" class="item-top-rated__button">Смотреть</a>
+						</div>
+						<a href="#popup-quick-view05" class="item-catalog__quick popup-link">Быстрый просмотр</a>
+						<div class="popup" id="popup-quick-view05">
+							<div class="popup__body">
+								<div class="popup__content content-quick-view-popup">
+									<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+									<div class="content-quick-view-popup__container">
+										<div class="content-quick-view-popup__body">
+											<div class="content-quick-view-popup__item detail-page__swiper">
+												<div class="swiper-button-next arrow-next"></div>
+												<div class="detail-page__image-box swiper-wrapper">
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/top-rated/05.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/04.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/03.jpg" alt="">
+													</div>
+												</div>
+												<div class="swiper-button-prev arrow-prev"></div>
+											</div>
+											<div class="content-quick-view-popup__title">Букет роз кустовая одилия</div>
+											<div class="content-quick-view-popup__price">5000 ₽</div>
+											<div class="content-quick-view-popup__shipping-label">Стоимость доставки рассчитывается при оформлении</div>
+											<div class="content-quick-view-popup__size size-quick-item">
+												<div class="size-quick-item__title">Размер</div>
+												<form action="#" class="size-quick-item__form">
+													<div class="size-quick-item__input">
+														<p>Мал.</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Средний</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Большой</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Делюкс</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Премиум</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+												</form>
+											</div>
+											<div class="content-quick-view-popup__action-row row-quick-action">
+												<div class="row-quick-action__quantity quantity">
+													<div class="quantity__title">Количество</div>
+													<div class="quantity__amount amount">
+														<span class="amount__minus">-</span>
+														<input type="text" class="amount__field" value="1"/>
+														<span class="amount__plus">+</span>
+													</div>
+												</div>
+												<a href="#addtobasket" class="row-detail-action__basket-btn popup-link">В корзину</a>
+											</div>
+											<div class="content-quick-view-popup__available-title">Товар в наличии и доступен к доставке завтра</div>
+											<div class="content-quick-view-popup__payment"><img src="img/cover/sub-payment.jpg" alt=""></div>
+										</div>
+									</div>
+								
+									
+								</div>
+							</div>
+						 </div> 
+					</div>
+					<div class="top-rated__item item-top-rated">
+						<div class="item-top-rated__image _ibg">
+							<img src="img/top-rated/06.jpg" alt="">
+						</div>
+						<div class="item-top-rated__row">
+							<div class="item-top-rated__info info-top-rated">
+								<a href="detail.html" class="info-top-rated__title">Букет нежной гвоздичной розы</a>
+								<div class="info-top-rated__price">от  3500 ₽</div>
+							</div>
+							<a href="detail.html" class="item-top-rated__button">Смотреть</a>
+						</div>
+						<a href="#popup-quick-view06" class="item-catalog__quick popup-link">Быстрый просмотр</a>
+						<div class="popup" id="popup-quick-view06">
+							<div class="popup__body">
+								<div class="popup__content content-quick-view-popup">
+									<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+									<div class="content-quick-view-popup__container">
+										<div class="content-quick-view-popup__body">
+											<div class="content-quick-view-popup__item detail-page__swiper">
+												<div class="swiper-button-next arrow-next"></div>
+												<div class="detail-page__image-box swiper-wrapper">
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/top-rated/06.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/04.jpg" alt="">
+													</div>
+													<div class="detail-page__image _ibg swiper-slide">
+														<img src="img/catalog/03.jpg" alt="">
+													</div>
+												</div>
+												<div class="swiper-button-prev arrow-prev"></div>
+											</div>
+											<div class="content-quick-view-popup__title">Букет нежной гвоздичной розы</div>
+											<div class="content-quick-view-popup__price">3500 ₽</div>
+											<div class="content-quick-view-popup__shipping-label">Стоимость доставки рассчитывается при оформлении</div>
+											<div class="content-quick-view-popup__size size-quick-item">
+												<div class="size-quick-item__title">Размер</div>
+												<form action="#" class="size-quick-item__form">
+													<div class="size-quick-item__input">
+														<p>Мал.</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Средний</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Большой</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Делюкс</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+													<div class="size-quick-item__input">
+														<p>Премиум</p>
+														<input id="yes" type="radio" name="question">
+													</div>
+												</form>
+											</div>
+											<div class="content-quick-view-popup__action-row row-quick-action">
+												<div class="row-quick-action__quantity quantity">
+													<div class="quantity__title">Количество</div>
+													<div class="quantity__amount amount">
+														<span class="amount__minus">-</span>
+														<input type="text" class="amount__field" value="1"/>
+														<span class="amount__plus">+</span>
+													</div>
+												</div>
+												<a href="#addtobasket" class="row-detail-action__basket-btn popup-link">В корзину</a>
+											</div>
+											<div class="content-quick-view-popup__available-title">Товар в наличии и доступен к доставке завтра</div>
+											<div class="content-quick-view-popup__payment"><img src="img/cover/sub-payment.jpg" alt=""></div>
+										</div>
+									</div>
+								
+									
+								</div>
+							</div>
+						 </div> 
+					</div>
+				</div>
+				<div class="top-rated__btn">
+					<a href="#!" class="main-btn">Показать больше</a>
+				</div>
+					
+			</div>
+		 </div>
+		 <div class="our-collection">
+			<div class="our-collection__container">
+				<div class="our-collection__title title">НАШИ КОЛЛЕКЦИИ</div>
+				<div class="our-collection__body">
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/01.jpg);background-repeat: no-repeat;background-size:cover;">
+					<div class="item-our-collection__title">
+						<a href="#!" class="item-our-collection__link">День рождения</a>
+					</div>	
+					</div>
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/02.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">Свадьба</a>
+						</div>	
+					</div>
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/03.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">Годовшина</a>
+						</div>	
+					</div>
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/04.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">Рождение ребенка</a>
+						</div>	
+					</div>
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/05.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">Роскошные</a>
+						</div>	
+					</div>
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/06.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">Выпуской</a>
+						</div>	
+					</div>
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/07.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">Новый год</a>
+						</div>
+					</div>
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/08.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">День святого валентина</a>
+						</div>	
+					</div>
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/09.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">Симпатия</a>
+						</div>	
+					</div>
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/10.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">Любовь и романтика</a>
+						</div>	
+					</div>
+					<div class="our-collection__item item-our-collection" style="background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/11.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">Благодарность</a>
+						</div>	
+					</div>
+					<div class="our-collection__item item-our-collection" style=" background: linear-gradient(rgb(255 255 255 / 54%), rgb(3 3 3 / 64%)), 
+					url(../img/our-collection/12.jpg);background-repeat: no-repeat;background-size:cover;">
+						<div class="item-our-collection__title">
+							<a href="#!" class="item-our-collection__link">Игрушечный</a>  
+						</div>	
+					</div>
+				</div>
+			</div>
+		 </div>
+		 <div class="why-choose">
+			<div class="why-choose__container">
+				<div class="why-choose__title title">почему выбирают нас?</div>
+				<div class="why-choose__body">
+					<div class="why-choose__item item-why-choose">
+						<div class="item-why-choose__row">
+							<div class="item-why-choose__title">Широкий выбор</div>
+							<div class="item-why-choose__icon"><img src="img/icons/choice-icon01.svg" alt=""></div>
+						</div>
+						<div class="item-why-choose__text">У нас огромный выбор самых красивых цветов в городе. В нашем цветочном магазине есть все виды цветов, включая розы, тюльпаны, лилии и многое другое!</div>
+					</div>
+					<div class="why-choose__item item-why-choose">
+						<div class="item-why-choose__row">
+							<div class="item-why-choose__title">Быстрая доставка</div>
+							<div class="item-why-choose__icon"><img src="img/icons/choice-icon02.svg" alt=""></div>
+						</div>
+						<div class="item-why-choose__text">Когда дело доходит до доставки цветов как можно быстрее, мы не мешкаем. Мы также обеспечиваем доставку на следующий день из нашего магазина до вашей двери.</div>
+					</div>
+					<div class="why-choose__item item-why-choose">
+						<div class="item-why-choose__row">
+							<div class="item-why-choose__title">Онлайн-заказ</div>
+							<div class="item-why-choose__icon"><img src="img/icons/choice-icon03.svg" alt=""></div>
+						</div>
+						<div class="item-why-choose__text">Все, что вам нужно сделать, это выбрать тип и количество того, что вы хотите онлайн - мы позаботимся об остальном! Наша команда онлайн 24/7 с клиентами.</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+		 <div class="subscribe">
+			<div class="subscribe__container">
+				<div class="subscribe__title title">Подпишитесь на наши электронные письма</div>
+				<div class="subscribe__sub-title">Узнавайте первыми о новых коллекциях и эксклюзивных предложениях.</div>
+				<form action="#" class="subscribe__form form-subscribe">
+					<div class="form-subscribe__action">
+						<input type="email" placeholder="E-mail" required>
+						<button type="submit"><img src="img/icons/input-arrow.svg" alt=""></button>
+					</div>
+				</form>
+			</div>
+		 </div>
+		 <div class="questions">
+			<div class="questions__container">
+				<div class="questions__title title">Часто задаваемые вопросы</div>
+				<div class="questions__body">
+					<div class="questions__content one content-questions">
+						<div class="content-questions__item">
+							<div class="content-questions__title">Могу ли я заказать доставку цветов в тот же день?</div>
+							<div class="content-questions__text">Да, вы можете разместить свой заказ до 12:00, чтобы получить его в тот же день, но если он будет позже 12:00, вы можете просто позвонить нам, и мы постараемся изменить наш график и доставить его в тот же день.</div>
+						</div>
+						<div class="content-questions__item">
+							<div class="content-questions__title">Вы доставляете по воскресеньям?</div>
+							<div class="content-questions__text">Да. Мы доставляем все воскресенье, вы можете заказать букеты онлайн с доставкой или просто позвонить нам, и мы доставим ваши цветы к вам.</div>
+						</div>
+						<div class="content-questions__item">
+							<div class="content-questions__title">Сколько стоит доставка цветов?</div>
+							<div class="content-questions__text">Мы доставляем до 4 миль бесплатно, 4-8 миль – 15 долларов, 8-20 миль – 20 долларов, 20-30 миль – 30 долларов и 30-50 миль – 50 долларов.</div>
+						</div>
+						<div class="content-questions__item">
+							<div class="content-questions__title">Сколько времени занимает доставка цветов?</div>
+							<div class="content-questions__text">Обычно мы доставляем в течение дня, но когда вы заказываете онлайн, вы можете выбрать временные интервалы, например, с 8:00 до 12:00, и мы доставим в указанное время. Также, если вам нужна доставка букетов в точное время, просто позвоните нам по телефону +214 772 56 74, и мы постараемся сделать все возможное, чтобы доставить их вам в удобное для вас время.</div>
+						</div>
+						<div class="content-questions__item">
+							<div class="content-questions__title">Могу ли я забрать цветы из магазина?</div>
+							<div class="content-questions__text">Да, конечно! Вам всегда рады в нашем магазине, но если вы живете недалеко от нас, помните, что вы можете заказать цветы с бесплатной доставкой.</div>
+						</div>
+						<div class="content-questions__item">
+							<div class="content-questions__title">Могу ли я заказать доставку цветов на завтра?</div>
+							<div class="content-questions__text">Да, вы можете оформить заказ онлайн до полуночи или позвонить в наш магазин до 18:00, чтобы оформить заказ и получить доставку на следующий день.</div>
+						</div>
+						<div class="content-questions__item">
+							<div class="content-questions__title">Куда вы доставляете цветы?</div>
+							<div class="content-questions__text">Мы доставляем в Западный Голливуд, Северный Голливуд, Беверли-Хиллз, Санта-Монику, Пасадену, Энсино, Бель-Эйр, Брентвуд, Шерман-Оукс, Манхэттен-Бич, Эль-Сегундо, Марина-дель-Рей, Калвер-Сити, Корейский квартал, центр Лос-Анджелеса, Палмс, Ван-Найс, Глендейл, Студио-Сити, Венеция, Пасифик Палисейдс и Малибу.</div>
+						</div>
+						<div class="content-questions__item">
+							<div class="content-questions__title">Могу ли я создать свой собственный букет?</div>
+							<div class="content-questions__text">Да, у нас так много свежих композиций каждый день, вы можете прийти, выбрать цветы, которые вам нравятся, и мы сделаем из них букет или цветочную композицию для вас. Вы всегда можете посетить нашу цветочную мастерскую и насладиться атмосферой создания цветочной композиции с флористами шаг за шагом.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+		 <div class="follow-us">
+			<div class="follow-us__container">
+				<div class="follow-us__title title">ПОДПИСЫВАЙТЕСЬ НА НАС В INSTAGRAM</div>
+				<div class="follow-us__link">
+					<a href="#!">@CHERRYBLOSSOM.LA</a>
+				</div>
+				<div class="gg-container follow-us-box">
+					<div class="gg-box dark" id="square">
+					  <img src="img/instagram/01.jpg" alt="">
+					  <img src="img/instagram/02.jpg" alt="">
+					  <img src="img/instagram/03.jpeg" alt="">
+					  <img src="img/instagram/04.jpg" alt="">
+					  <img src="img/instagram/05.jpg" alt="">
+					  <img src="img/instagram/06.jpg" alt="">
+					  <img src="img/instagram/02.jpg" alt="">
+					  <img src="img/instagram/03.jpeg" alt="">
+					  <img src="img/instagram/02.jpg" alt="">
+					  <img src="img/instagram/03.jpeg" alt="">
+					</div>
+				  </div>
+				<!-- <div class="follow-us__image _ibg">
+					<img src="img/cover/instagram-cover.jpg" alt="">
+				</div> -->
+			</div>
+		 </div>
+		 <div class="our-blogs">
+			<div class="our-blogs__container">
+				<div class="our-blogs__title title">НАШИ БЛОГИ</div>
+				<div class="our-blogs__swiper">
+					<div class="swiper-button-next arrow-next"></div>
+				<div class="our-blogs__body swiper-wrapper">
+					<div class="our-blogs__item item-our-blogs swiper-slide">
+						<div class="item-our-blogs__image _ibg"><img src="img/our-blog/our-blog01.jpg" alt=""></div>
+						<div class="item-our-blogs__content content-our-blogs">
+							<a href="#!" class="content-our-blogs__title">Какие цветы выбрать для осеннего букета невесты</a>
+							<div class="content-our-blogs__text">Букет невесты должен сочетаться с бутоньеркой жениха и вписываться в общую концепцию свадебного убранства зала. Осенняя гамма прекрасно сочетается с классической вечеринкой или тематической, если взять за основу стиль «Осенний карнавал», «Кантри», «Прованс», «Хэллоуин» и др. </div>
+						</div>
+					</div>
+					<div class="our-blogs__item item-our-blogs swiper-slide">
+						<div class="item-our-blogs__image _ibg"><img src="img/our-blog/our-blog03.jpg" alt=""></div>
+						<div class="item-our-blogs__content content-our-blogs">
+							<a href="#!" class="content-our-blogs__title">Как сохранить розы в вазе</a>
+							<div class="content-our-blogs__text">Цветы – источник радости и атрибут праздника. Получая в подарок красивый букет, хочется, чтобы он радовал взгляд как можно дольше. Давайте разберёмся, как сохранить розы в вазе с водой дома в течение нескольких недель вместо 4-5 дней.</div>
+						</div>
+					</div>
+					<div class="our-blogs__item item-our-blogs swiper-slide">
+						<div class="item-our-blogs__image _ibg"><img src="img/our-blog/our-blog02.jpg" alt=""></div>
+						<div class="item-our-blogs__content content-our-blogs">    
+							<a href="#!" class="content-our-blogs__title">ЦВЕТЫ НА ДЕНЬ УЧИТЕЛЯ </a>
+							<div class="content-our-blogs__text">Наверное, нет такого человека, который не знает, что раз в год принято чествовать учителей, принеся благодарность за их нелёгкий труд. Цветы на День учителя – это самый минимальный знак уважения к педагогам, делящимися с нами знаниями и дающими путёвку во взрослую жизнь. Каким должен быть букет и сколько цветков приготовить в этот праздничный день?</div>
+						</div>
+					</div>
+					<div class="our-blogs__item item-our-blogs swiper-slide">
+						<div class="item-our-blogs__image _ibg"><img src="img/our-blog/our-blog05.jpg" alt=""></div>
+						<div class="item-our-blogs__content content-our-blogs">
+							<a href="#!" class="content-our-blogs__title">Летние букеты – какие цветы дарят летом</a>
+							<div class="content-our-blogs__text">Летом флора отличается насыщенностью красок и разнообразием цветочного ансамбля. Композиция из летних растений как будто стремится передать всю красоту этого времени года, но при этом выглядит очень естественной и живой.</div>
+						</div>
+					</div>
+					<div class="our-blogs__item item-our-blogs swiper-slide">
+						<div class="item-our-blogs__image _ibg"><img src="img/our-blog/our-blog04.jpg" alt=""></div>
+						<div class="item-our-blogs__content content-our-blogs">
+							<a href="#!" class="content-our-blogs__title">КАКОЙ БУКЕТ ДАРИТЬ НА СВАДЬБУ МОЛОДОЖЕНАМ</a>
+							<div class="content-our-blogs__text">Наверное, ни одна свадьба не проходит без цветов – символа любви и красоты. Букет на бракосочетание – это не самостоятельный презент, а скорее дополнение к основному, более ценному подарку от гостей.</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-button-prev arrow-prev"></div>
+			</div>
+		</div>
+		 </div>
+		 <div class="geo-location">
+			<div class="geo-location__container">
+				<div class="geo-location__body">
+					<div class="geo-location__item item-geo-location">
+						<div class="item-geo-location__icon">
+							<img src="img/icons/geo-icon.svg" alt="">
+						</div>
+						<div class="item-geo-location__title">Сherry Blossom</div>
+						<div class="item-geo-location__text">
+							<p>Москва 3-я карачаровская улица д. 11</p>
+							<p>Санкт-петербург малоохтинский проспект 64</p>
+						</div>
+						<div class="item-geo-location__text">
+							<p>Понедельник - Пятница 8:00 - 22:00</p>
+							<p>Суббота 10:00 - 15:00</p>
+							<p>Воскресенье 10:00 - 12:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+ 	</main>
+	
+	 <footer class="footer">
+		<div class="footer__container">
+		   <div class="footer__inner">
+			   <div class="footer__top top-footer">
+				   <div class="top-footer__item item-top-footer">
+					   <div class="item-top-footer__title">Меню</div>
+					   <nav class="item-top-footer__menu menu-footer">
+						   <ul class="menu-footer__list">
+							   <li><a href="search.html" class="menu-footer__link">Поиск</a></li>
+							   <li><a href="index.html" class="menu-footer__link">Главная</a></li>
+							   <li><a href="about.html" class="menu-footer__link">О нас</a></li>
+							   <li><a href="catalog.html" class="menu-footer__link">Каталог</a></li>
+							   <li><a href="collections.html" class="menu-footer__link">Коллекции</a></li>
+							   <li><a href="contacts.html" class="menu-footer__link">Контакты</a></li>
+						   </ul>
+					   </nav>
+				   </div>
+				   <div class="top-footer__item item-top-footer">
+					   <div class="item-top-footer__image">
+						   <img src="img/cover/footerlogo.svg" alt="">
+					   </div>
+					   <div class="item-top-footer__text">
+						   <p>Москва 3-я карачаровская улица д. 11</p>
+						   <p>Санкт-петербург малоохтинский проспект 64</p>
+					   </div>
+					   <div class="item-top-footer__text">
+						   <p>Понедельник - Пятница 8:00 - 22:00</p>
+						   <p>Суббота 10:00 - 15:00</p>
+						   <p>Воскресенье 10:00 - 12:00</p>
+					   </div>
+					   <div class="item-top-footer__text">
+						   <a href="tel:+79524249542">+7 952 424 95 42</a>
+						   <a href="mailto:cherryblossom@gmail.com">cherryblossom@gmail.com</a>
+					   </div>
+					   <div class="item-top-footer__links">
+						   <a href="#!"><img src="img/icons/social-icon01.svg" alt=""></a>
+						   <a href="#!"><img src="img/icons/social-icon02.svg" alt=""></a>
+						   <a href="#!"><img src="img/icons/social-icon03.svg" alt=""></a>
+					   </div>
+				   </div>
+				   <div class="top-footer__item item-top-footer">
+					   <div class="item-top-footer__title">Информация</div>
+					   <nav class="item-top-footer__menu menu-footer">
+						   <ul class="menu-footer__list">
+							   <li><a href="#!" class="menu-footer__link">Политика конфиденциальности</a></li>
+							   <li><a href="#!" class="menu-footer__link">Условия использования</a></li>
+							   <li><a href="#!" class="menu-footer__link">Политика возврата</a></li>
+							   <li><a href="#!" class="menu-footer__link">Полиция доставки</a></li>
+							   <li><a href="#!" class="menu-footer__link">Выставление счетов и оплата</a></li>
+						   </ul>
+					   </nav>
+				   </div>
+			   </div>
+			   <div class="footer__bottom bottom-footer">
+				   <div class="bottom-footer__item _ibg">
+					   <img src="img/cover/paymets-list.jpg" alt="">
+				   </div>
+				   <div class="bottom-footer__item">
+					   © 2023, Москва - Cherry Blossom
+				   </div>
+			   </div>
+		   </div>
+	   </div>
+	</footer>
+ </div>
+
+ <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/grid-gallery.min.js"></script>
+ <script src="js/script.js"></script>
+</body>
+<!-- <div class="popup" id="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a class="popup__close close-popup">X</a>
+			<div class="popup__title">Модальное окно №1</div>
+			<div class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, error tempore aspernatur velit, aperiam earum quisquam sint</div>
+		</div>
+	</div>
+ </div> -->
+ <!-- <a href="#popup" class="header__search popup-link"><img src="img/icons/search.svg" alt=""></a> -->
+</html>

@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Корзина</title>
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/grid-gallery.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div class="wrapper">
+	<header id="header" class="header lock-padding">
+		<div class="header__container">
+			<div class="header__body">
+				<div class="header__burger left-column"><span></span></div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<div class="header__burger"><span></span></div>
+						<ul class="menu__list">
+							<li class="menu__item"><a href="search.html" class="menu__link">Поиск</a></li>
+							<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Каталог</a></li>
+							<li class="menu__item"><a href="collections.html" class="menu__link">Коллекции</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="index.html" class="header__logo"><img src="img/cover/logo.svg" alt=""></a>
+				<div class="header__action action-header">
+					<div class="action-header__log-in">
+						<a class="popup-link" href="#popup-registration">Войти</a>
+						<a class="popup-link" href="#popup-registration">Создать аккаунт</a>
+					</div>
+					<a href="search.html" class="action-header__item _search-item"><img src="img/icons/search-icon.svg" alt=""></a>
+					<div class="action-header__item">
+						<a href="basket.html"><img src="img/icons/basket-icon.svg" alt=""></a>
+						<span class="item-action__value-basket">112 350 ₽</span>
+						 <span class="item-action__count-items"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14" fill="none">
+							<path d="M1 7.16162C1 4.12406 3.46243 1.66162 6.5 1.66162C9.53757 1.66162 12 4.12406 12 7.16162C12 10.1992 9.53757 12.6616 6.5 12.6616C3.46243 12.6616 1 10.1992 1 7.16162Z" fill="#FFD1D7" stroke="#EDEDED" stroke-width="2"/>
+							</svg></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="popup-registration">
+			<div class="popup__body">
+				<div class="popup__content content-registration-popup">
+					<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+					<div class="popup__logo"><img src="img/cover/logo2.svg" alt=""></div>
+					<form action="#" class="registration-popup__form form-registration">
+						<div class="form-registration__title">Войдите или зарегистрируйтесь, чтобы продолжить</div>
+						<div class="form-registration__input">
+							<input type="tel" required name="phone" maxlength="16" placeholder="+7(___)___-__-__"  id="phone"/>
+						</div>
+						<div class="form-registration__button">
+							<button type="submit">Подтвердить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		 </div>
+		 <div class="popup" id="addtobasket">
+			<div class="popup__body">
+				<div class="popup__content popup-addtobasket">
+					<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+					<div class="popup__logo"><img src="img/cover/logo2.svg" alt=""></div>
+					<div class="popup__title">Товар успешно добавлен в корзину</div>
+					<div class="popup__sub-title">Вы можете перейти к оформлению заказа или продолжить покупки</div>
+					<div class="popup__buttons">
+						<a class="close-popup main-btn" href="#">Продолжить покупки</a>
+						<a class="main-btn" href="basket.html">Перейти в корзину</a>
+					</div>
+				</div>
+			</div>
+		 </div>
+ 	</header>  
+
+ 	<main class="main">
+ 		<div class="basket">
+			<div class="basket__top-action basket__container">
+				<div class="breadcrumbs">
+					<nav class="breadcrumbs__body">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><a href="catalog.html"  class="breadcrumbs__link">Корзина</a></li>
+						</ul>
+					</nav>
+				</div>
+				<a href="catalog.html" class="shopping__link">Продолжить покупки</a>
+			</div>
+			<div class="basket__bottom-action bottom-basket-action basket__container">
+				<div class="bottom-basket-action__left-labels">
+					<p>Товары</p>
+				</div>
+				<div class="bottom-basket-action__right-labels">
+					<p>Количество</p>
+					<p>Итого</p>
+				</div>
+			</div>
+			<div class="basket__inner">
+			<div class="basket__body basket__container">
+				<div class="basket__item item-basket">
+					<div class="item-basket__info info-basket-item">
+						<div class="info-basket-item__image _ibg">
+							<img src="img/catalog/01.jpg" alt="">
+						</div>
+						<div class="info-basket-item__information information-basket-item">
+							<a href="detail.html" class="information-basket-item__title">Букет Гиацинт розовый</a>
+							<div class="information-basket-item__price">6450 ₽</div>
+							<div class="information-basket-item__size">Размер: Средний</div>
+						</div>
+					</div>
+					<div class="item-basket__action action-item-basket">
+						<div class="action-item-basket__count">
+							<div class="quantity__amount amount">
+								<span class="amount__minus">-</span>
+								<input type="text" class="amount__field" value="1"/>
+								<span class="amount__plus">+</span>
+							</div>
+							<a href="#!"><img src="img/icons/delete.svg" alt=""></a>
+						</div>
+						<div class="action-item-basket__total-price">9000 ₽</div>
+					</div>
+				</div>
+				<div class="basket__item item-basket">
+					<div class="item-basket__info info-basket-item">
+						<div class="info-basket-item__image _ibg">
+							<img src="img/catalog/04.jpg" alt="">
+						</div>
+						<div class="info-basket-item__information information-basket-item">
+							<a href="detail.html" class="information-basket-item__title">Букет нежной гвоздичной розы</a>
+							<div class="information-basket-item__price">5350 ₽</div>
+							<div class="information-basket-item__size">Размер: Большой</div>
+						</div>
+					</div>
+					<div class="item-basket__action action-item-basket">
+						<div class="action-item-basket__count">
+							<div class="quantity__amount amount">
+								<span class="amount__minus">-</span>
+								<input type="text" class="amount__field" value="1"/>
+								<span class="amount__plus">+</span>
+							</div>
+							<a href="#!"><img src="img/icons/delete.svg" alt=""></a>
+						</div>
+						<div class="action-item-basket__total-price">19000 ₽</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="basket-sub-action action-sub-basket action-sub-basket__container">
+			<div class="action-sub-basket__forms-item">
+				<form action="#" class="action-sub-basket__form form-sub-action-basket">
+					<div class="form-sub-action-basket__label">Специальные инструкции для продавца</div>
+					<div class="form-sub-action-basket__area">
+						<textarea placeholder="Добавьте свои инструкции для продавца здесь"></textarea>
+					</div>
+					<div class="form-sub-action-basket__label">Подарочное сообщение</div>
+					<div class="form-sub-action-basket__area">
+						<textarea placeholder="Добавьте сообщение о подарке здесь"></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="action-sub-basket__order-item order-basket-item">
+				<div class="order-basket-item__subtotal subtotal-basket">
+					<div class="subtotal-basket__title">Итог</div>
+					<div class="subtotal-basket__value">24 000 ₽</div>
+				</div>
+				<div class="order-basket-item__shiiping-title">Налоги и стоимость доставки рассчитываются при оформлении заказа</div>
+				<button class="order-basket-item__button">Оформить заказ</button>
+			</div>
+		</div>
+		<div class="special-offer">
+			<div class="special-offer__container">
+				<div class="special-offer__title page-title">Специальные предложения</div>
+				<div class="you-may-also__swiper"> 
+					<div class="swiper-button-next arrow-next"></div>
+				<div class="special-offer__body swiper-wrapper">
+					<div class="catalog__item item-catalog swiper-slide">
+						<div class="item-catalog__image _ibg">
+							<img src="img/catalog/01.jpg" alt="">
+						</div>
+						<div class="item-catalog__row">
+							<div class="item-catalog__info info-catalog">
+								<a href="detail.html" class="info-catalog__title">45 красных роз</a>
+								<div class="info-catalog__price">8 000 ₽</div>
+							</div>
+							<a href="#addtobasket" class="info-catalog__button popup-link">В корзину</a>
+						</div>
+						<!-- <a href="#!" class="item-catalog__quick">Быстрый просмотр</a> -->
+					</div>
+					<div class="catalog__item item-catalog swiper-slide">
+						<div class="item-catalog__image _ibg">
+							<img src="img/catalog/02.jpg" alt="">
+						</div>
+						<div class="item-catalog__row">
+							<div class="item-catalog__info info-catalog">
+								<a href="detail.html" class="info-catalog__title">Кристалл (розовые гвоздики с миксом цветов)</a>
+								<div class="info-catalog__price">4 000 ₽</div>
+							</div>
+							<a href="#addtobasket" class="info-catalog__button popup-link">В корзину</a>
+						</div>
+						<!-- <a href="#!" class="item-catalog__quick">Быстрый просмотр</a> -->
+					</div>
+					<div class="catalog__item item-catalog swiper-slide">
+						<div class="item-catalog__image _ibg">
+							<img src="img/catalog/03.jpg" alt="">
+						</div>
+						<div class="item-catalog__row">
+							<div class="item-catalog__info info-catalog">
+								<a href="detail.html" class="info-catalog__title">Аннет (белые георгины)</a>
+								<div class="info-catalog__price">8 000 ₽</div>
+							</div>
+							<a href="#addtobasket" class="info-catalog__button popup-link">В корзину</a>
+						</div>
+						<!-- <a href="#!" class="item-catalog__quick">Быстрый просмотр</a> -->
+					</div>
+					<div class="catalog__item item-catalog swiper-slide">
+						<div class="item-catalog__image _ibg">
+							<img src="img/catalog/04.jpg" alt="">
+						</div>
+						<div class="item-catalog__row">
+							<div class="item-catalog__info info-catalog">
+								<a href="detail.html" class="info-catalog__title">45 красных роз</a>
+								<div class="info-catalog__price">8 000 ₽</div>
+							</div>
+							<a href="#addtobasket" class="info-catalog__button popup-link">В корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-prev arrow-prev"></div>
+			</div>
+			</div>
+		</div>
+		</div>
+ 	</main>
+	
+	 <footer class="footer">
+		<div class="footer__container">
+		   <div class="footer__inner">
+			   <div class="footer__top top-footer">
+				   <div class="top-footer__item item-top-footer">
+					   <div class="item-top-footer__title">Меню</div>
+					   <nav class="item-top-footer__menu menu-footer">
+						   <ul class="menu-footer__list">
+							   <li><a href="search.html" class="menu-footer__link">Поиск</a></li>
+							   <li><a href="index.html" class="menu-footer__link">Главная</a></li>
+							   <li><a href="about.html" class="menu-footer__link">О нас</a></li>
+							   <li><a href="catalog.html" class="menu-footer__link">Каталог</a></li>
+							   <li><a href="collections.html" class="menu-footer__link">Коллекции</a></li>
+							   <li><a href="contacts.html" class="menu-footer__link">Контакты</a></li>
+						   </ul>
+					   </nav>
+				   </div>
+				   <div class="top-footer__item item-top-footer">
+					   <div class="item-top-footer__image">
+						   <img src="img/cover/footerlogo.svg" alt="">
+					   </div>
+					   <div class="item-top-footer__text">
+						   <p>Москва 3-я карачаровская улица д. 11</p>
+						   <p>Санкт-петербург малоохтинский проспект 64</p>
+					   </div>
+					   <div class="item-top-footer__text">
+						   <p>Понедельник - Пятница 8:00 - 22:00</p>
+						   <p>Суббота 10:00 - 15:00</p>
+						   <p>Воскресенье 10:00 - 12:00</p>
+					   </div>
+					   <div class="item-top-footer__text">
+						   <a href="tel:+79524249542">+7 952 424 95 42</a>
+						   <a href="mailto:cherryblossom@gmail.com">cherryblossom@gmail.com</a>
+					   </div>
+					   <div class="item-top-footer__links">
+						   <a href="#!"><img src="img/icons/social-icon01.svg" alt=""></a>
+						   <a href="#!"><img src="img/icons/social-icon02.svg" alt=""></a>
+						   <a href="#!"><img src="img/icons/social-icon03.svg" alt=""></a>
+					   </div>
+				   </div>
+				   <div class="top-footer__item item-top-footer">
+					   <div class="item-top-footer__title">Информация</div>
+					   <nav class="item-top-footer__menu menu-footer">
+						   <ul class="menu-footer__list">
+							   <li><a href="#!" class="menu-footer__link">Политика конфиденциальности</a></li>
+							   <li><a href="#!" class="menu-footer__link">Условия использования</a></li>
+							   <li><a href="#!" class="menu-footer__link">Политика возврата</a></li>
+							   <li><a href="#!" class="menu-footer__link">Политика доставки</a></li>
+							   <li><a href="#!" class="menu-footer__link">Выставление счетов и оплата</a></li>
+						   </ul>
+					   </nav>
+				   </div>
+			   </div>
+			   <div class="footer__bottom bottom-footer">
+				   <div class="bottom-footer__item _ibg">
+					   <img src="img/cover/paymets-list.jpg" alt="">
+				   </div>
+				   <div class="bottom-footer__item">
+					   © 2023, Москва - Cherry Blossom
+				   </div>
+			   </div>
+		   </div>
+	   </div>
+	</footer>
+ </div>
+
+ <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/grid-gallery.min.js"></script>
+ <script src="js/script.js"></script>
+</body>
+<!-- <div class="popup" id="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a class="popup__close close-popup">X</a>
+			<div class="popup__title">Модальное окно №1</div>
+			<div class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, error tempore aspernatur velit, aperiam earum quisquam sint</div>
+		</div>
+	</div>
+ </div> -->
+ <!-- <a href="#popup" class="header__search popup-link"><img src="img/icons/search.svg" alt=""></a> -->
+</html>
