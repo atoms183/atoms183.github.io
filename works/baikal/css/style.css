@@ -216,7 +216,7 @@ a.active::after {
 }
 .callback-form__title::after {
   position: absolute;
-  content: url(../img/icons/decor-title.svg);
+  content: url("../img/icons/decor-title.svg");
   right: 40px;
   top: -40px;
 }
@@ -346,7 +346,7 @@ a.active::after {
 }
 .title::after {
   position: absolute;
-  content: url(/img/icons/decor-title.svg);
+  content: url("../img/icons/decor-title.svg");
   right: 0;
   bottom: 40px;
 }
@@ -463,7 +463,7 @@ a.active::after {
 }
 .content-cover__title::after {
   position: absolute;
-  content: url("/img/cover/cover-text.png");
+  content: url("../img/cover/cover-text.png");
   top: -55%;
   right: 0;
 }
@@ -492,7 +492,7 @@ a.active::after {
   padding-top: 20px;
   left: 0;
   bottom: 0;
-  content: url(/img/icons/blue-decor.svg);
+  content: url("../img/icons/blue-decor.svg");
 }
 .about__title {
   margin-bottom: 60px;
