@@ -34,6 +34,7 @@
   background-position: center center;
   background-size: 50% 50%;
   background: -webkit-gradient(linear, right top, left top, from(#ffffff), to(#ffffff));
+  background: -o-linear-gradient(right, #ffffff 0%, #ffffff 100%);
   background: linear-gradient(270deg, #ffffff 0%, #ffffff 100%);
   border-radius: 3px;
 }

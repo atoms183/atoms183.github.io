@@ -317,6 +317,9 @@ main{
 
 	&__item {
 	}
+	&__icon{
+		display: none;
+	}
 
 	// .menu__link
 
@@ -822,6 +825,7 @@ label.form-contact-action__title.circle-check::before{
 		display: flex;
 		justify-content: space-between;
 		gap:20px;
+		margin-bottom: 60px;
 	}
 
 	// .detail-item__sidebar
@@ -842,6 +846,7 @@ label.form-contact-action__title.circle-check::before{
 
 	&__bottom-inner {
 		max-width: 870px;
+		// margin: 0 auto;
 	}
 
 	// .detail-item__tabs-body
@@ -849,7 +854,6 @@ label.form-contact-action__title.circle-check::before{
 	&__tabs-body {
 	}
 }
-
 
 .content-detail {
 
@@ -903,6 +907,7 @@ label.form-contact-action__title.circle-check::before{
 		display: flex;
 		align-items: center;
 		gap:20px;
+		flex-wrap: wrap;
 	}
 
 	// .info-box-detail__add-cart
@@ -910,6 +915,7 @@ label.form-contact-action__title.circle-check::before{
 	&__add-cart {
 		display: flex;
 		gap:10px;
+		flex-wrap: wrap;
 	}
 
 	// .info-box-detail__short-spec
@@ -1022,15 +1028,15 @@ label.form-contact-action__title.circle-check::before{
 		font-weight: 500;
 		line-height: 23px;
 		position: relative;
-		& p:nth-child(1)::after{
-			position: absolute;
-			content: '';
-			width: 20%;
-			height: 1px;
-			border-bottom: 1px dotted #949A9E;
-			bottom: 0;
-			right: 17%;
-		}
+		// & p:nth-child(1)::after{
+		// 	position: absolute;
+		// 	content: '';
+		// 	width: 20%;
+		// 	height: 1px;
+		// 	border-bottom: 1px dotted #949A9E;
+		// 	bottom: 0;
+		// 	right: 17%;
+		// }
 	}
 }
 .feature-detail-product {
@@ -1228,8 +1234,11 @@ label.form-contact-action__title.circle-check::before{
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 15px;
-		&.active img{
+		& img{
 			transform: rotate(180deg);
+		}
+		&.active img{
+			transform: rotate(0deg);
 		}
 	}
 
@@ -1247,6 +1256,10 @@ label.form-contact-action__title.circle-check::before{
 		font-size: 17px;
 		font-weight: 500;
 		line-height: 25px;
+		display: none;
+		& .active{
+			display: block;
+		}
 	}
 }
 
@@ -1659,6 +1672,8 @@ label.form-contact-action__title.circle-check::before{
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		margin-bottom: 20px;
+		gap:40px;
+		
 	}
 
 	// .cart__body
@@ -1676,6 +1691,8 @@ label.form-contact-action__title.circle-check::before{
 		border-bottom: 1px solid #D5D8D9;
 		border-top: 1px solid #D5D8D9;
 		text-align: center;
+		align-items: center;
+		gap:15px;
 	}
 
 	// .cart__action
@@ -1693,24 +1710,32 @@ label.form-contact-action__title.circle-check::before{
 
 	&__name {
 		grid-column: span 6;
+		    position: relative;
+  			right: 25px;
 	}
 
 	// .info-cart__price
 
 	&__price {
 		grid-column: span 2;
+		    position: relative;
+    		right: 25px;
 	}
 
 	// .info-cart__count
 
 	&__count {
 		grid-column: span 2;
+		    position: relative;
+    		right: 25px;
 	}
 
 	// .info-cart__summary
 
 	&__summary {
 		grid-column: span 2;
+		position: relative;
+		right: 70px;
 	}
 }
 .item-cart {
@@ -1726,6 +1751,8 @@ label.form-contact-action__title.circle-check::before{
 
 	&__title{
 		grid-column: span 5;
+		color: inherit;
+		text-align: left;
 	}
 
 	// .item-cart__price
@@ -1742,7 +1769,7 @@ label.form-contact-action__title.circle-check::before{
 		display: flex;
 		border-radius: 4px;
 		border: 1px solid #C8CBCC;
-		grid-column: span 2;
+		grid-column: span 1;
 	}
 
 	// .item-cart__full-price
