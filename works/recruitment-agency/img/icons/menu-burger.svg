@@ -1,0 +1,13 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Menu burger" clip-path="url(#clip0_42_2302)">
+<rect id="Rectangle 14" y="9" width="23" height="4" rx="2" fill="#1169B0"/>
+<rect id="Rectangle 16" x="13" y="23" width="23" height="4" rx="2" fill="#1169B0"/>
+<rect id="Rectangle 15" x="26" y="9" width="10" height="4" rx="2" fill="#1169B0"/>
+<rect id="Rectangle 17" y="23" width="10" height="4" rx="2" fill="#1169B0"/>
+</g>
+<defs>
+<clipPath id="clip0_42_2302">
+<rect width="36" height="36" fill="white"/>
+</clipPath>
+</defs>
+</svg>
