@@ -48,11 +48,41 @@
     const menuBody = document.querySelector('.menu');
 if (iconMenu){
     iconMenu.addEventListener("click", function(e){
-        document.body.classList.toggle('_lock');
+        document.body.classList.toggle('lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
     });
 }
+
+
+var swiper = new Swiper(".services__swiper", {
+   slidesPerView: 1,
+   spaceBetween: 40,
+   pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+   },
+   navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      }
+    },
+ });
+
+
 
 // if (document.getElementsByClassName('menu__item').length > 0) {
 //     document.getElementsByClassName('menu__item')[0].classList.add('show');
