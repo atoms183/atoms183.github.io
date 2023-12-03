@@ -455,8 +455,10 @@ body._touch{
 }
 //=============================services==========================================
 .services {
-	
-	padding-bottom: 100px;
+	@include adaptiv-value("padding-bottom", 100, 35, 0);
+	@media (min-width: $maxWidthContainer) {
+		padding-bottom:100px;
+	}
 	&__swiper{
 		position: relative;
 	}
@@ -581,7 +583,7 @@ display: none;
 .advantages {
 	background: url("../img/main-page/advantages/cover.jpg") no-repeat fixed;
 	background-size: cover;
-	@include adaptiv-value("margin-bottom", 120, 25, 0);
+	@include adaptiv-value("margin-bottom", 120, 35, 0);
 	@media (min-width: $maxWidthContainer) {
 	margin-bottom: 120px;
 	}
@@ -682,7 +684,7 @@ display: none;
 //===========================stages==============================================
 
 .stages {
-		@include adaptiv-value("padding-bottom", 90, 25, 0);
+		@include adaptiv-value("padding-bottom", 90, 35, 0);
 		@media (min-width: $maxWidthContainer) {
 		padding-bottom: 90px;
 	}
@@ -786,7 +788,7 @@ display: none;
 
 //===========================BLOG==============================================
 .blog {
-		@include adaptiv-value("padding-bottom", 80, 25, 0);
+		@include adaptiv-value("padding-bottom", 80, 35, 0);
 		@media (min-width: $maxWidthContainer) {
 		padding-bottom: 80px;
 		}
@@ -874,7 +876,7 @@ display: none;
 
 //===========================vacancy==============================================
 .vacancy {
-	@include adaptiv-value("padding-bottom", 80, 25, 0);
+	@include adaptiv-value("padding-bottom", 80, 35, 0);
 	@media (min-width: $maxWidthContainer) {
 	padding-bottom: 80px;
 	}
@@ -1149,8 +1151,6 @@ display: none;
 	}
 }
 
-
- 
 .form-footer {
 
 	// .form-footer__input
@@ -1178,6 +1178,122 @@ display: none;
 	}
 }
 
+//===========================FAQ==============================================
+
+.faq {
+	@include adaptiv-value("padding-bottom", 100, 35, 0);
+	@media (min-width: $maxWidthContainer) {
+		padding-bottom: 100px;
+	}
+	// .faq__title
+
+	&__title {
+		@include adaptiv-value("margin-bottom", 65, 25, 0);
+		@media (min-width: $maxWidthContainer) {
+		margin-bottom: 65px;
+		}
+	}
+
+	// .faq__body
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 992px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	// .faq__image
+
+	&__image {
+		max-width: 470px;
+		@media (max-width: 768px) {
+			max-width:200px;
+		}
+	}
+
+	// .faq__spoilers
+
+	&__spoilers {
+		width: 100%;
+		max-width: 670px;
+		align-self: flex-start;
+		display: grid;
+		gap:30px;
+		@media (max-width: 992px) {
+			align-self: center;
+		}
+	}
+}
+
+.spollers{
+	&__title{
+		display: flex;
+		gap:20px;
+		width: 100%;
+		cursor: default;
+		@include adaptiv-font(21,13);
+		@media (min-width: $maxWidthContainer) {
+		font-size: 21px;
+		}
+		font-weight: 600;
+		line-height: 140%; 
+		position: relative;
+		text-align: left;
+		background-color: transparent;
+		& p{
+			max-width: 525px;
+			@media (max-width: 992px) {
+				padding-right: 15%;
+			}
+		}
+		& span{
+			color: #5896C8;
+			font-weight: 400;
+		}
+	}
+	&__item{
+		display: grid;
+		gap:15px;
+	}
+	&__body{
+		line-height: 140%;
+		@include adaptiv-font(18,13);
+		@media (min-width: $maxWidthContainer) {
+			font-size: 18px;
+		}
+		max-width: 525px;
+	}
+}
+
+  ._spoller-init .spollers__title {
+	cursor: pointer;
+  }
+  ._spoller-init .spollers__title::before, ._spoller-init .spollers__title::after {
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	background-color: #000;
+	height: 2px;
+	width: 15px;
+	transition: transform 0.5s ease 0s;
+  }
+  ._spoller-init .spollers__title::before {
+	transform: translate(-75%, -50%) rotate(40deg);
+  }
+  ._spoller-init .spollers__title::after {
+	transform: translate(0, -50%) rotate(-40deg);
+  }
+  ._spoller-init .spollers__title._spoller-active::before {
+	transform: translateX(-75%) rotate(-40deg);
+  }
+  ._spoller-init .spollers__title._spoller-active::after {
+	transform: rotate(40deg);
+  }
 
 // background: url(../img/cover/cover.jpg) center center no-repeat fixed;
 // background-size: cover;
