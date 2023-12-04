@@ -35,7 +35,10 @@
 	background-color: #fff;
 	color: #000;
 	max-width: 800px;
-	padding: 30px;
+	padding: 40px;
+	@media (max-width: 768px) {
+		padding: 0px;
+	}
 	position: relative;
 	//transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
