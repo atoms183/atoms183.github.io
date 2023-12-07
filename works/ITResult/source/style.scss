@@ -157,6 +157,7 @@ $maxWidthContainer: 1280px;
 		line-height: 120%;
 		color: #FBFCFF;
 		text-transform: uppercase;
+		cursor: pointer;
 	}
 
 	// .menu__icon
@@ -505,8 +506,11 @@ $maxWidthContainer: 1280px;
 
 	&__body {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
 		gap:20px;
+		@media (max-width: 420px) {
+			grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+		}
 	}
 
 	// .documents__item
@@ -669,6 +673,7 @@ $maxWidthContainer: 1280px;
 	// .sub-list-footer__item
 
 	&__item {
+		cursor: pointer;
 	}
 
 	// .sub-list-footer__link
