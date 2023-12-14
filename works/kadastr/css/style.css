@@ -747,6 +747,9 @@ body._touch .menu__link {
   gap: 16px;
 }
 
+.bottom-footer {
+  background: #fff;
+}
 .bottom-footer__container {
   min-height: 74px;
   display: -webkit-box;
@@ -1364,6 +1367,62 @@ body._touch .menu__link {
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+.contacts {
+  padding: 95px 0;
+  position: relative;
+}
+.contacts__map::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/cover/covier-map.jpg) no-repeat center center/cover;
+}
+.contacts__item {
+  border-radius: 20px;
+  background-color: #fff;
+  display: grid;
+  gap: 24px;
+  padding: 48px;
+  max-width: 416px;
+  position: relative;
+}
+
+.item-contacts__label {
+  display: grid;
+}
+
+.label-contact__title {
+  line-height: 162.5%;
+  color: #A6A6A6;
+}
+.label-contact__phone {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 4px;
+  color: inherit;
+}
+.label-contact__sub-phone {
+  line-height: 162.5%;
+  color: inherit;
+}
+.label-contact__text {
+  line-height: 162.5%;
+}
+.label-contact__mail {
+  color: inherit;
+  line-height: 162.5%;
+}
+.label-contact__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
 }
 
 @media (max-width: 1140px) {
