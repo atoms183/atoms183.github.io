@@ -108,6 +108,31 @@ var swiper = new Swiper(".cover__swiper", {
        }
      },
   });
+
+  var swiper = new Swiper(".our-clients__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+     breakpoints: {
+       480: {
+         slidesPerView: 1,
+         spaceBetween: 27,
+       },
+       768: {
+         slidesPerView: 2,
+         spaceBetween: 27,
+       },
+       1024: {
+         slidesPerView: 4,
+         spaceBetween: 27,
+       }
+     },
+  });
+
+
  
 //   var elem = document.getElementsByClassName('about-us');
 //   var sourceBottom = elem[0].getBoundingClientRect().bottom + window.pageYOffset;
