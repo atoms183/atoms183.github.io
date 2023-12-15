@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Создание слайдера</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div class="wrapper">
+	<header  class="header">
+		<div class="header__container">
+			<div class="header__body">
+				<a href="index.html" class="header__logo">
+					<img src="img/cover/logo2.svg" alt="">
+				</a>
+				<div class="header__action">
+					<nav class="header__menu">
+						<ul class="menu__list">
+							<li><a href="index.html" class="menu__link menu__link-active">Сниппеты</a></li>
+							<li><a href="#!" class="menu__link menu__link-active">CSS</a></li>
+							<li><a href="#!" class="menu__link">Портфолио</a></li>
+							<li><a href="contacts.html" class="menu__link">Цели</a></li>
+						</ul>
+					</nav>
+		
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+ 	</header>  
+
+ 	<main class="main">
+		<div class="cover mySwiper">
+			<div class="swiper-wrapper">
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover2.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover3.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover4.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover5.png" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover6.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover7.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover8.jpg" alt="">
+			</div>
+			<div class="swiper-scrollbar"></div>
+		</div>
+		
+		 </div>
+		 <div class="detailblock">
+			<div class="detailblock__container">
+		<div class="detailblock__body">
+		<div class="news__body"> 
+			<div class="news__list">
+				<div class="news__item-simple item-news">
+					<a class="item-news__title title">Создание слайдера</a>
+					<div class="item-news__text">
+
+			
+	<pre>
+		<p class="class_name">HTML</p>
+	<code class="language-html">
+	&lt;div class="swiper mySwiper">
+		&lt;div class="swiper-wrapper">
+		  &lt;div class="swiper-slide">Slide 1&lt;/div>
+		&lt;/div>
+		&lt;div class="swiper-pagination">&lt;/div>
+	  &lt;/div>
+	</code></pre>
+	
+	
+	
+<pre>
+	<p class="class_name">JS</p>
+	<code class="language-html">
+
+var swiper = new Swiper(".Swiper", {
+	slidesPerView: 1,
+	spaceBetween: 30,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+		},
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	breakpoints: {
+		640: {
+		slidesPerView: 2,
+		spaceBetween: 20,
+		},
+		768: {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		},
+		1024: {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		},
+	},
+	});
+</code>
+</pre>
+
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popular__news news-popular">
+						<div class="news-popular__body">
+							<div class="news-popular__title title">Поставленные цели</div>
+							<div class="news-popular__items">
+								<div class="news-popular__item item-popular">
+									<a href="#!" class="item-popular__title title">Работающая сборка GULP</a>
+									<div class="item-popular__date">1 мая 2023</div>
+								</div>
+								<div class="news-popular__item item-popular">
+									<a href="#!" class="item-popular__title title" style="text-decoration: line-through;">Сайт портфолио с рабочими проектами</a>
+									<div class="item-popular__date">26 июл 2023</div>
+								</div>
+								<div class="news-popular__item item-popular">
+									<a href="#!" class="item-popular__title title">Проработка плана на обучение</a>
+									<div class="item-popular__date">11 авг 2023</div>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+        
+ 	</main>
+	
+ 	<footer class="footer">
+		<div class="footer__container">
+		   <div class="footer__body">
+			   <a href="#!" class="footer__logo"><img src="img/cover/logo2.svg" alt=""></a>
+		   
+			   <div class="footer__copy">
+				   Дневник одного верстальщика
+			   </div>
+		   </div>
+	   </div>
+	</footer>
+ </div>
+ <script src="js/jquery-3.4.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+ <script src="js/script.js"></script>
+</body>
+
+</html>

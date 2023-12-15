@@ -1,0 +1,146 @@
+@media (max-width:1220px){
+
+}//END MEDIA 1220px
+@media (max-width: 1170px) {
+    .mainblock {
+        // .mainblock__body
+        &__body {
+          flex-direction: column;
+        }
+    }
+    .detailblock {
+      // .mainblock__body
+      &__body {
+        flex-direction: column;
+      }
+  }
+    .news{
+      &__list{
+        max-width: 100%;
+      }
+    }
+    .news-popular {
+        max-width: 100%;
+      &__items {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(295px, 1fr) );
+        row-gap: 30px;
+      }
+      &__item{
+        min-width: 294px;
+        max-width: 295px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+    .form-subscription__input{
+      max-width: 100%;
+    }
+    .form-subscription__button{
+      margin: 0 auto;
+    }
+}//END MEDIA 1170px
+
+@media (max-width: 1100px) {
+
+}//END MEDIA 1100px
+
+@media (max-width:992px){
+  .item-content__item{
+    max-height: 100%;
+  }
+  .news {
+    // .news__item-medium
+  
+    &__item-medium {
+      flex-direction: column-reverse;
+    }
+  
+    // .news__item-advanced
+  
+    &__item-advanced {
+      flex-direction: column-reverse;
+    }
+  }
+  .item-news {
+    	// .item-news__content
+
+	&__content {
+		max-width: 100%;
+	}
+  &__subcontent{
+    min-height: 300px;
+  }
+  }
+  .contacts {
+   padding: 80px 0;
+ // .contacts__body
+
+ &__body {
+   flex-direction: column;
+    gap:50px;
+    align-items: center;
+
+ }
+  }
+  .contacts-info {
+
+    // .contacts-info__item
+  
+    &__item {
+      max-width: 100%;
+      padding-top: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}//END MEDIA 992px
+
+@media (max-width: 800px) {
+  .news__item-simple{
+    min-width: 100%;
+  }
+}//END MEDIA 800px
+
+@media (max-width:645px){
+  .news-popular {
+    &__title{
+      text-align: center;
+    }
+  &__items {
+    margin: 0 auto;
+  }
+}
+.footer__list{
+  gap:19px;
+}
+.contacts{
+  &__form{
+    max-width: 100%;
+  }
+}
+.form-contact{
+  &__button{
+    max-width: 100%;
+  }
+}
+}//END MEDIA 645px
+
+@media (max-width:580px){
+  .contacts__form {
+    padding: 25px 30px 30px 30px;
+  }
+
+}//END MEDIA 580px
+
+@media (max-width:420px){
+
+}//END MEDIA 420px
+
+
+@media (max-width:280px){
+
+}//END MEDIA 280px
+
+

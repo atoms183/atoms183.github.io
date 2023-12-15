@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Создание слайдера</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div class="wrapper">
+	<header  class="header">
+		<div class="header__container">
+			<div class="header__body">
+				<a href="index.html" class="header__logo">
+					<img src="img/cover/logo2.svg" alt="">
+				</a>
+				<div class="header__action">
+					<nav class="header__menu">
+						<ul class="menu__list">
+							<li><a href="index.html" class="menu__link menu__link-active">Сниппеты</a></li>
+							<li><a href="#!" class="menu__link menu__link-active">CSS</a></li>
+							<li><a href="#!" class="menu__link">Портфолио</a></li>
+							<li><a href="contacts.html" class="menu__link">Цели</a></li>
+						</ul>
+					</nav>
+		
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+ 	</header>  
+
+ 	<main class="main">
+		<div class="cover mySwiper">
+			<div class="swiper-wrapper">
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover2.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover3.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover4.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover5.png" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover6.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover7.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover8.jpg" alt="">
+			</div>
+			<div class="swiper-scrollbar"></div>
+		</div>
+		
+		 </div>
+		 <div class="detailblock">
+			<div class="detailblock__container">
+		<div class="detailblock__body">
+		<div class="news__body"> 
+			<div class="news__list">
+				<div class="news__item-simple item-news">
+					<a href="category-detail.html" class="item-news__title title">Создание слайдера</a>
+					<div class="item-news__text">
+
+			
+	<pre>
+		<p class="class_name">HTML</p>
+	<code class="language-html">
+	&lt;footer class="footer">
+	&lt;footer class="footer">
+	&lt;div class="footer__container">
+	&lt;div class="footer__body">
+	&lt;a href="#!" class="footer__logo">&lt;img src="img/cover/logo2.svg" alt=""></a>
+	&lt;nav class="footer__menu">
+	&lt;ul class="footer__list">
+	&lt;li>&lt;a href="#!" class="footer__link">О нас&lt/a></li>
+	&lt;li>&lt;a href="#!" class="footer__link">Галерея&lt/a></li>
+	&lt;li>&lt;a href="#!" class="footer__link">Новости&lt/a></li>
+	&lt;li>&lt;a href="#!" class="footer__link">Контакты&lt/a></li>
+	&lt;/ul>
+	&lt;/nav>
+	&lt;div class="footer__copy">
+	ООО “Организация” 2020. Все права защищены
+	&lt;/div>
+	&lt;/div>
+	&lt;/div>
+	&lt;/footer>
+	</code></pre>
+	
+	
+	<pre>
+		<p class="class_name">SCSS</p>
+		<code class="language-html html-scss">
+	.pagination {
+	padding-bottom: 100px;
+	// .pagination__body
+	
+	&__body {
+	display: flex;
+	gap:20px;
+	align-items: center;
+	justify-content: center;
+	}
+	// .pagination__list
+	
+	&__list {
+	display: flex;
+	gap:20px;
+	}
+	
+	// .pagination__link
+	
+	&__link {
+	line-height: 23px;
+	color: #000000;
+	transition: all 0.5s ease 0s;
+	&:hover{
+		color: #5D71DD;
+	}
+	
+	// .pagination__link_active
+	
+	&_active {
+		color: #5D71DD;
+		text-decoration: underline;
+	}
+	}
+	
+	// .pagination__next-btn
+	
+	&__next-btn {
+	line-height: 23px;
+	color: #5D71DD;
+	padding: 10px 16px;
+	background: rgba(93, 113, 221, 0.05);
+	border-radius: 8px;
+	transition:  all 0.5s ease 0s;
+	&:hover{
+		background: rgba(93, 113, 221, 0.15);
+	}
+	}
+	}</code>
+</pre>
+
+
+<pre>
+	<p class="class_name">JS</p>
+	<code class="language-html">
+$(document).ready(function() 
+{
+$('.header__burger').click(function(event) {
+$('.header__burger,.header__menu').toggleClass('active');
+$('body').toggleClass('lock');
+});</code>
+</pre>
+
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popular__news news-popular">
+						<div class="news-popular__body">
+							<div class="news-popular__title title">Поставленные цели</div>
+							<div class="news-popular__items">
+								<div class="news-popular__item item-popular">
+									<a href="#!" class="item-popular__title title">Работающая сборка GULP</a>
+									<div class="item-popular__date">1 мая 2023</div>
+								</div>
+								<div class="news-popular__item item-popular">
+									<a href="#!" class="item-popular__title title" style="text-decoration: line-through;">Сайт портфолио с рабочими проектами</a>
+									<div class="item-popular__date">26 июл 2023</div>
+								</div>
+								<div class="news-popular__item item-popular">
+									<a href="#!" class="item-popular__title title">Проработка плана на обучение</a>
+									<div class="item-popular__date">11 авг 2023</div>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+        
+ 	</main>
+	
+ 	<footer class="footer">
+		<div class="footer__container">
+		   <div class="footer__body">
+			   <a href="#!" class="footer__logo"><img src="img/cover/logo2.svg" alt=""></a>
+		   
+			   <div class="footer__copy">
+				   Дневник одного верстальщика
+			   </div>
+		   </div>
+	   </div>
+	</footer>
+ </div>
+ <script src="js/jquery-3.4.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+ <script src="js/script.js"></script>
+</body>
+
+</html>

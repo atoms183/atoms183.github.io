@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Создание табов на JS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div class="wrapper">
+	<header  class="header">
+		<div class="header__container">
+			<div class="header__body">
+				<a href="index.html" class="header__logo">
+					<img src="img/cover/logo2.svg" alt="">
+				</a>
+				<div class="header__action">
+					<nav class="header__menu">
+						<ul class="menu__list">
+							<li><a href="index.html" class="menu__link menu__link-active">Сниппеты</a></li>
+							<li><a href="#!" class="menu__link menu__link-active">CSS</a></li>
+							<li><a href="#!" class="menu__link">Портфолио</a></li>
+							<li><a href="contacts.html" class="menu__link">Цели</a></li>
+						</ul>
+					</nav>
+		
+					<div class="header__burger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+ 	</header>  
+
+ 	<main class="main">
+		<div class="cover mySwiper">
+			<div class="swiper-wrapper">
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover2.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover3.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover4.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover5.png" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover6.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover7.jpg" alt="">
+			</div>
+			<div class="cover__image swiper-slide _ibg">
+				<img src="img/cover/cover8.jpg" alt="">
+			</div>
+			<div class="swiper-scrollbar"></div>
+		</div>
+		
+		 </div>
+		 <div class="detailblock">
+			<div class="detailblock__container">
+		<div class="detailblock__body">
+		<div class="news__body"> 
+			<div class="news__list">
+				<div class="news__item-simple item-news">
+					<a class="item-news__title title">Создание табов на JS</a>
+					<div class="item-news__text">
+
+			
+	<pre>
+		<p class="class_name">HTML</p>
+	<code class="language-html">
+&lt;div class="advantages__body">
+&lt;div class="tabs-advantages">
+	&lt;nav class="tabs-advantages__nav"> <!-- Навигация табов -->
+		&lt;button type="button" class="tabs-advantages__button active">&lt;span>01&lt;/span> Профессионализм&lt;/button>
+		&lt;button type="button" class="tabs-advantages__button">&lt;span>02&lt;/span> Широкий спектр услуг&lt;/button>
+	&lt;/nav>
+	&lt;/div>
+	&lt;div class="advantages__tabs-content content-tabs"> <!-- Оболочка табов-->
+		&lt;div class="content-tabs__item-inner inner-tabs active"><!-- Вкладка №1 и т.д -->
+		<!-- Контент вкладки -->
+		&lt;/div>		
+	&lt;/div>
+&lt;/div>
+	</code></pre>
+
+	<pre>
+		<p class="class_name">SCSS</p>
+		<code class="language-html html-scss">
+.content-tabs {
+	// .content-tabs__item-inner
+	&__item-inner {
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
+}
+		</code>
+</pre>
+
+
+<pre>
+	<p class="class_name">JS</p>
+	<code class="language-html">
+const tabNavItems = document.querySelectorAll('.tabs-advantages__button');
+const tabItems = document.querySelectorAll('.content-tabs__item-inner');
+document.addEventListener("click", function (e) {
+	const targetElement = e.target;
+	let currentActiveIndex = null;
+	let newActiveIndex = null;
+	if (targetElement.closest('.tabs-advantages__button')) {
+		tabNavItems.forEach((tabNavItem, index) => {
+			if (tabNavItem.classList.contains('active')) {
+				currentActiveIndex = index;
+				tabNavItem.classList.remove('active');
+			}
+			if (tabNavItem === targetElement) {
+				newActiveIndex = index;
+			}
+		});
+		targetElement.classList.add('active');
+		tabItems[currentActiveIndex].classList.remove('active');
+		tabItems[newActiveIndex].classList.add('active');
+	}
+});
+</code>
+</pre>
+
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popular__news news-popular">
+						<div class="news-popular__body">
+							<div class="news-popular__title title">Поставленные цели</div>
+							<div class="news-popular__items">
+								<div class="news-popular__item item-popular">
+									<a href="#!" class="item-popular__title title">Работающая сборка GULP</a>
+									<div class="item-popular__date">1 мая 2023</div>
+								</div>
+								<div class="news-popular__item item-popular">
+									<a href="#!" class="item-popular__title title" style="text-decoration: line-through;">Сайт портфолио с рабочими проектами</a>
+									<div class="item-popular__date">26 июл 2023</div>
+								</div>
+								<div class="news-popular__item item-popular">
+									<a href="#!" class="item-popular__title title">Проработка плана на обучение</a>
+									<div class="item-popular__date">11 авг 2023</div>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</div>
+		 </div>
+        
+ 	</main>
+	
+ 	<footer class="footer">
+		<div class="footer__container">
+		   <div class="footer__body">
+			   <a href="#!" class="footer__logo"><img src="img/cover/logo2.svg" alt=""></a>
+		   
+			   <div class="footer__copy">
+				   Дневник одного верстальщика
+			   </div>
+		   </div>
+	   </div>
+	</footer>
+ </div>
+ <script src="js/jquery-3.4.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+ <script src="js/script.js"></script>
+</body>
+
+</html>
