@@ -323,6 +323,10 @@ input::-webkit-inner-spin-button {
 	&__link {
 		line-height: 162.5%;
 		color: inherit;
+		@include adaptiv-font(16,13);
+		@media (min-width: $maxWidthContainer) {
+		font-size: 16px;
+		}
 	}
 }
 
@@ -899,6 +903,23 @@ display: none;
 	&__body {
 		margin-bottom: 48px;
 	}
+	// .services-page_body
+
+	&-page_body{
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap:23px;
+		@include adaptiv-value("padding-bottom", 95, 45, 0);
+		@media (min-width: $maxWidthContainer) {
+			padding-bottom: 95px;
+		}
+		margin-bottom: 0;
+	}
+		// .services__text-content
+
+		&__text-content {
+	
+		}
 
 	// .services__item
 
@@ -966,6 +987,10 @@ display: none;
 	&__sub-title {
 		line-height:162.5%;
 		max-width: 750px;
+		@include adaptiv-font(16,13);
+		@media (min-width: $maxWidthContainer) {
+		font-size: 16px;
+		}
 	}
 }
 
@@ -1005,6 +1030,24 @@ display: none;
 		position: relative;
 	}
 
+}
+.content-text-services {
+
+	// .content-text-services__title
+
+	&__title {
+		margin-bottom: 16px;
+	}
+
+	// .content-text-services__text
+
+	&__text {
+		line-height: 162.5%;
+		@include adaptiv-font(16,14);
+		@media (min-width: $maxWidthContainer) {
+		font-size: 16px;
+		}
+	}
 }
 
 //===========================how-we-work==============================================
