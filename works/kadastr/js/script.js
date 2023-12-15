@@ -72,7 +72,7 @@ var swiper = new Swiper(".cover__swiper", {
     },
      breakpoints: {
        480: {
-         slidesPerView: 2,
+         slidesPerView: 1,
          spaceBetween: 27,
        },
        768: {
