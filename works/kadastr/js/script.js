@@ -53,18 +53,9 @@ if (iconMenu){
     });
 }
 
-var swiper = new Swiper(".cover__swiper", {
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-  });
 
 
-  var swiper = new Swiper(".projects__swiper, .what-say__swiper", {
+  var swiper = new Swiper(".projects__swiper, .another-projects__swiper, .what-say__swiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
@@ -102,6 +93,10 @@ var swiper = new Swiper(".cover__swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+    //   autoplay: {
+	// 	delay: 3500,
+	// 	disableOnInteraction: false,
+	// 	},
      breakpoints: {
        480: {
          slidesPerView: 1,
@@ -116,6 +111,19 @@ var swiper = new Swiper(".cover__swiper", {
          spaceBetween: 27,
        }
      },
+  });
+  var swiper = new Swiper(".cover__swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    //   autoplay: {
+	// 	delay: 3500,
+	// 	disableOnInteraction: false,
+	// 	},
   });
 
 
