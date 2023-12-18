@@ -175,6 +175,12 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   gap: 16px;
 }
+@media (max-width: 768px) {
+  .connection-form__title {
+    margin-bottom: 15px;
+  }
+}
+
 .connection-form__body .radio-control input {
   display: none;
 }
@@ -206,6 +212,9 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #a6a6a6;
 }
 
@@ -257,283 +266,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .connection-form__radio-input:hover svg rect {
   fill: #FF5C00;
-}
-
-/* ===============================
-	Async image loading
-=============================== */
-.async-image-holder {
-  position: relative;
-  overflow: hidden;
-}
-
-.async-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-out 0s;
-  -o-transition: opacity 0.3s ease-out 0s;
-  transition: opacity 0.3s ease-out 0s;
-}
-
-.async-image.loaded {
-  opacity: 1;
-}
-
-.async-image.low-res {
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
-}
-
-/* ===============================
-    BEGIN GALLERY
-=============================== */
-.gallery:after {
-  content: "";
-  display: inline-block;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-}
-
-/* =========================================
-    Gallery image sizes
-========================================== */
-/*Setting height by padding-top maintains aspect ratio when window is resized*/
-/* 2 columns */
-.gallery-image {
-  min-width: 175px;
-  padding-top: 35%;
-  margin: 0.2%;
-  height: 247px;
-  background-color: rgba(20, 20, 20, 0.3);
-}
-
-#swgl-overlay {
-  display: block;
-  position: fixed;
-  z-index: 50;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  -webkit-transition: max-height 0s linear 270ms, opacity 250ms linear 0s;
-  -o-transition: max-height 0s linear 270ms, opacity 250ms linear 0s;
-  transition: max-height 0s linear 270ms, opacity 250ms linear 0s;
-  max-height: 0px;
-  overflow: hidden;
-}
-
-#swgl-overlay.active {
-  opacity: 1;
-  max-height: 100vh;
-  -webkit-transition: max-height 0s linear 0s, opacity 250ms linear 0s;
-  -o-transition: max-height 0s linear 0s, opacity 250ms linear 0s;
-  transition: max-height 0s linear 0s, opacity 250ms linear 0s;
-}
-
-/* =========================
-    CONTROLS
-========================= */
-#swgl-controls {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 5000;
-}
-
-.swgl-digitizer {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.swgl-btn {
-  position: absolute;
-  border-width: 0;
-  font-size: 35px;
-  color: white;
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 156px 16px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0);
-  cursor: pointer;
-}
-
-.swgl-btn:focus, .swgl-btn:active {
-  outline: none !important;
-}
-
-.swgl-nav-btn {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 110px;
-  color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
-  -o-transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
-  transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
-}
-
-.swgl-nav-btn:hover {
-  color: white;
-  background-color: rgba(60, 60, 60, 0.4);
-}
-
-#swgl-close-btn {
-  top: 0px;
-  right: 0px;
-  padding: 7px 15px;
-  font-size: 45px;
-  z-index: 4000;
-}
-
-#swgl-prev-btn {
-  left: 0px;
-  text-align: left;
-}
-
-#swgl-next-btn {
-  right: 0px;
-  text-align: right;
-}
-
-/* =========================
-    Slide wrapper
-========================= */
-#swgl-slide-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-/* ==========================
-    Loading spinner
-===========================*/
-.swgl-loading-spinner {
-  position: absolute;
-  display: block;
-  width: 65px;
-  height: auto;
-  top: 50%;
-  left: 50%;
-  -webkit-animation-name: swgl-spinner;
-          animation-name: swgl-spinner;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-/* The animation code */
-@-webkit-keyframes swgl-spinner {
-  from {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-            transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-            transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-@keyframes swgl-spinner {
-  from {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-            transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-            transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-/* =========================
-    SLIDE
-========================= */
-.swgl-slide {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 260px;
-  top: 50%;
-  left: 50%;
-  border-radius: 2px;
-  border: 2px solid white;
-  background: #e4e4e4;
-  overflow: hidden;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: opacity 500ms linear 0s, max-height 500ms ease 0s, max-width 500ms ease 0s, -webkit-transform 500ms ease-out 0s;
-  transition: opacity 500ms linear 0s, max-height 500ms ease 0s, max-width 500ms ease 0s, -webkit-transform 500ms ease-out 0s;
-  -o-transition: opacity 500ms linear 0s, transform 500ms ease-out 0s, max-height 500ms ease 0s, max-width 500ms ease 0s;
-  transition: opacity 500ms linear 0s, transform 500ms ease-out 0s, max-height 500ms ease 0s, max-width 500ms ease 0s;
-  transition: opacity 500ms linear 0s, transform 500ms ease-out 0s, max-height 500ms ease 0s, max-width 500ms ease 0s, -webkit-transform 500ms ease-out 0s;
-}
-
-.swgl-slide.loaded {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.swgl-left {
-  opacity: 0;
-  -webkit-transform: translate(-155%, -50%) !important;
-      -ms-transform: translate(-155%, -50%) !important;
-          transform: translate(-155%, -50%) !important;
-}
-
-.swgl-right {
-  opacity: 0;
-  -webkit-transform: translate(55%, -50%) !important;
-      -ms-transform: translate(55%, -50%) !important;
-          transform: translate(55%, -50%) !important;
-}
-
-.swgl-center {
-  opacity: 0;
-}
-
-.swgl-slide-img {
-  display: block;
-  width: auto;
-  height: auto;
-  max-height: 98vh;
-  max-width: 98vw;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s ease-out 0s;
-  -o-transition: opacity 0.4s ease-out 0s;
-  transition: opacity 0.4s ease-out 0s;
-}
-
-.swgl-slide-img.loaded {
-  opacity: 1;
-  width: auto;
-  height: auto;
-}
-
-.swgl-caption {
-  display: none;
 }
 
 body {
@@ -716,9 +448,22 @@ input::-webkit-inner-spin-button {
           align-items: center;
   min-height: 94px;
   padding: 0 50px;
+  padding-left: calc(20px + 30 * ((100vw - 320px) / 1005));
+  padding-right: calc(20px + 30 * ((100vw - 320px) / 1005));
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 30px;
+}
+@media (min-width: 1325px) {
+  .header__body {
+    padding-left: 50px;
+  }
+}
+@media (min-width: 1325px) {
+  .header__body {
+    padding-right: 50px;
+  }
 }
 .header__breadcrumbs {
   margin-bottom: 48px;
@@ -732,12 +477,25 @@ input::-webkit-inner-spin-button {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__logo {
+@media (max-width: 1600px) {
+  .header__left-column {
+    gap: 35px;
+  }
+}
+.header__logo img {
   max-width: calc(120px + 25 * ((100vw - 320px) / 1005));
 }
 @media (min-width: 1325px) {
-  .header__logo {
+  .header__logo img {
     max-width: 145px;
+  }
+}
+.header__sub-logo {
+  display: block;
+}
+@media (min-width: 1140px) {
+  .header__sub-logo {
+    display: none;
   }
 }
 .header__right-column {
@@ -747,10 +505,15 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 40px;
+  gap: calc(15px + 25 * ((100vw - 320px) / 1005));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (min-width: 1325px) {
+  .header__right-column {
+    gap: 40px;
+  }
 }
 .header__info {
   display: -webkit-box;
@@ -771,6 +534,15 @@ input::-webkit-inner-spin-button {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+}
+@media (max-width: 1830px) {
+  .header__info {
+    gap: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .header__socials {
@@ -800,9 +572,17 @@ input::-webkit-inner-spin-button {
 .header__callback:hover {
   background: #FF5C00;
 }
-@media (max-width: 570px) {
+@media (max-width: 1300px) {
   .header__callback {
     display: none;
+  }
+}
+.header__sub-callback {
+  display: none;
+}
+@media (max-width: 1300px) {
+  .header__sub-callback {
+    display: block;
   }
 }
 
@@ -1013,6 +793,33 @@ body._touch .menu__link {
   font-size: 18px;
 }
 
+@media (max-width: 1830px) {
+  .phone-header__item:nth-child(1) {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .phone-header__item:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 1530px) {
+  .header__socials {
+    position: relative;
+    right: 25px;
+  }
+}
+@media (max-width: 570px) {
+  .phone-header__item:nth-child(1) {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .phone-header__item:nth-child(2) {
+    display: block;
+  }
+  .header__info {
+    gap: 10px;
+  }
+}
 .social-header__item {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -1916,7 +1723,15 @@ body._touch .menu__link {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px; /* 166.667% */
+  line-height: 166.667%;
+}
+@media (max-width: 768px) {
+  .types-price-service__label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .types-price-service__item {
   line-height: 162.5%;
@@ -1932,6 +1747,14 @@ body._touch .menu__link {
 .types-price-service__item:nth-child(even) {
   background: #fff;
 }
+@media (max-width: 768px) {
+  .types-price-service__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .label-service__sub-titles {
   display: -webkit-box;
@@ -1939,6 +1762,16 @@ body._touch .menu__link {
   display: flex;
   gap: 95px;
   padding-right: 130px;
+}
+@media (max-width: 768px) {
+  .label-service__sub-titles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    gap: 0px;
+  }
 }
 
 .item-types-price-service__title {
@@ -1949,12 +1782,27 @@ body._touch .menu__link {
     max-width: 135px;
   }
 }
+@media (max-width: 768px) {
+  .item-types-price-service__title {
+    max-width: 100%;
+    font-weight: 700;
+  }
+}
 .item-types-price-service__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 95px;
   padding-right: 4%;
+}
+@media (max-width: 768px) {
+  .item-types-price-service__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .info-service__timeline {
@@ -3139,7 +2987,7 @@ body._touch .menu__link {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    background: #000;
+    background: #ff5c00;
   }
   .menu__icon::before, .menu__icon::after {
     content: "";
@@ -3232,4 +3080,256 @@ body._touch .menu__link {
     gap: 45px;
     margin-top: 50px;
   }
+}
+/* ===============================
+	Async image loading
+=============================== */
+.async-image-holder {
+  position: relative;
+  overflow: hidden;
+}
+
+.async-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out 0s;
+  -o-transition: opacity 0.3s ease-out 0s;
+  transition: opacity 0.3s ease-out 0s;
+}
+
+.async-image.loaded {
+  opacity: 1;
+}
+
+.async-image.low-res {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+#swgl-overlay {
+  display: block;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: max-height 0s linear 270ms, opacity 250ms linear 0s;
+  -o-transition: max-height 0s linear 270ms, opacity 250ms linear 0s;
+  transition: max-height 0s linear 270ms, opacity 250ms linear 0s;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+#swgl-overlay.active {
+  opacity: 1;
+  max-height: 100vh;
+  -webkit-transition: max-height 0s linear 0s, opacity 250ms linear 0s;
+  -o-transition: max-height 0s linear 0s, opacity 250ms linear 0s;
+  transition: max-height 0s linear 0s, opacity 250ms linear 0s;
+}
+
+/* =========================
+    CONTROLS
+========================= */
+#swgl-controls {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+}
+
+.swgl-digitizer {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.swgl-btn {
+  position: absolute;
+  border-width: 0;
+  font-size: 35px;
+  color: white;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 156px 16px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.swgl-btn:focus, .swgl-btn:active {
+  outline: none !important;
+}
+
+.swgl-nav-btn {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 110px;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
+  -o-transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
+  transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
+}
+
+.swgl-nav-btn:hover {
+  color: white;
+  background-color: rgba(60, 60, 60, 0.4);
+}
+
+#swgl-close-btn {
+  top: 0px;
+  right: 0px;
+  padding: 7px 15px;
+  font-size: 45px;
+  z-index: 4000;
+}
+
+#swgl-prev-btn {
+  left: 0px;
+  text-align: left;
+}
+
+#swgl-next-btn {
+  right: 0px;
+  text-align: right;
+}
+
+/* =========================
+    Slide wrapper
+========================= */
+#swgl-slide-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* ==========================
+    Loading spinner
+===========================*/
+.swgl-loading-spinner {
+  position: absolute;
+  display: block;
+  width: 65px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-animation-name: swgl-spinner;
+          animation-name: swgl-spinner;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+/* The animation code */
+@-webkit-keyframes swgl-spinner {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes swgl-spinner {
+  from {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+/* =========================
+    SLIDE
+========================= */
+.swgl-slide {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 260px;
+  top: 50%;
+  left: 50%;
+  border-radius: 2px;
+  border: 2px solid white;
+  background: #e4e4e4;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: opacity 500ms linear 0s, max-height 500ms ease 0s, max-width 500ms ease 0s, -webkit-transform 500ms ease-out 0s;
+  transition: opacity 500ms linear 0s, max-height 500ms ease 0s, max-width 500ms ease 0s, -webkit-transform 500ms ease-out 0s;
+  -o-transition: opacity 500ms linear 0s, transform 500ms ease-out 0s, max-height 500ms ease 0s, max-width 500ms ease 0s;
+  transition: opacity 500ms linear 0s, transform 500ms ease-out 0s, max-height 500ms ease 0s, max-width 500ms ease 0s;
+  transition: opacity 500ms linear 0s, transform 500ms ease-out 0s, max-height 500ms ease 0s, max-width 500ms ease 0s, -webkit-transform 500ms ease-out 0s;
+}
+
+.swgl-slide.loaded {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.swgl-left {
+  opacity: 0;
+  -webkit-transform: translate(-155%, -50%) !important;
+      -ms-transform: translate(-155%, -50%) !important;
+          transform: translate(-155%, -50%) !important;
+}
+
+.swgl-right {
+  opacity: 0;
+  -webkit-transform: translate(55%, -50%) !important;
+      -ms-transform: translate(55%, -50%) !important;
+          transform: translate(55%, -50%) !important;
+}
+
+.swgl-center {
+  opacity: 0;
+}
+
+.swgl-slide-img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 98vh;
+  max-width: 98vw;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-out 0s;
+  -o-transition: opacity 0.4s ease-out 0s;
+  transition: opacity 0.4s ease-out 0s;
+}
+
+.swgl-slide-img.loaded {
+  opacity: 1;
+  width: auto;
+  height: auto;
+}
+
+.swgl-caption {
+  display: none;
 }

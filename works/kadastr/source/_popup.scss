@@ -129,6 +129,11 @@
 
 	&__item {
 	}
+	&__title{
+	@media (max-width: 768px) {
+		margin-bottom: 15px;
+	}
+	}
 }
 
 
@@ -156,6 +161,7 @@
 .connection-form .radio-control input:checked + .connection-form__radio-input {
 	border: 2px solid #ff5c00bd;
 	display: flex;
+	justify-content: center;
 	background: #a6a6a6;
 }
 .connection-form .radio-control input:checked + .connection-form__radio-input:after,
