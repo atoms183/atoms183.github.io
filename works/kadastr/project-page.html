@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Общеобразовательная школа на 900 мест</title>
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.min.css">
 <link rel="icon" href="img/cover/logo.svg">
 </head>
 <body>
@@ -100,7 +100,7 @@
 			<div class="popup__text">Оставьте свои данные, наш менеджер свяжется с вами в ближайшее время.</div>
 				<form action="#" method="post" class="popup-callback__form form-callback">
 					<input id="" type="text" name="name" class="form-callback__input" placeholder="Ваше имя" required>
-					<input id="" type="number" name="phone" class="form-callback__input" placeholder="Телефон*" required>
+					<input id="phone" type="tel" name="phone" maxlength="16" class="form-callback__input" placeholder="Телефон*" required>
 					<input id="" type="email" name="email" class="form-callback__input" placeholder="Email">
 					<div class="form-callback__btn">
 						<button type="submit" class="main-link">Отправить</button>
@@ -152,6 +152,16 @@
 				</form>
 			</div>
 			</div>
+			</div>
+			<div class="popup" id="thankyou">
+				<div class="popup__body">
+					<div class="popup__content popup-callback__content">
+						<a class="popup__close close-popup"><img src="img/icons/close.svg" alt=""></a>
+						<div class="popup__title title _anim-items _anim-no-hide" style="text-align:center;">Спасибо!</div>
+						<div class="popup__text" style="text-align:center;">Ваша заявка успешно отправлена, в ближайшее время с вами свяжется менеджер</div>
+							<div class="popup__image"><img src="img/cover/404-cover.svg" alt=""></div>
+						</div>
+				</div>
 			</div>
 	</header>  
  	<main class="main">
@@ -232,7 +242,7 @@
 		<section class="another-projects">
 			<div class="another-projects__container">
 				<div class="another-projects__title title _anim-items _anim-no-hide">Другие проекты</div>
-				<div class="another-projects__swiper">
+				<div class="projects__swiper">
 					<div class="projects__body swiper-wrapper">
 						<div class="projects__item item-projects swiper-slide">
 							<div class="item-projects__image _ibg"><img src="img/projects/01.jpg" alt=""></div>
@@ -327,7 +337,7 @@
 	<footer class="footer">
 		<div class="footer__top top-footer">
 			<div class="top-footer__container">
-				<div class="top-footer__logo"><img src="img/cover/footer-logo.svg" alt=""></div>
+				<a href="index.html" class="top-footer__logo"><img src="img/cover/footer-logo.svg" alt=""></a>
 				<nav class="top-footer__menu menu-footer">
 					<div class="menu-footer__item item-menu-footer">
 						<div class="item-menu-footer__label">Компания</div>
@@ -340,20 +350,20 @@
 					<div class="menu-footer__item item-menu-footer">
 						<div class="item-menu-footer__label">Услуги</div>
 						<ul class="item-menu-footer__list">
-							<li><a href="#!" class="item-menu-footer__link">Перепланировка</a></li>
-							<li><a href="#!" class="item-menu-footer__link">Регистрация сделок с недвижимостью</a></li>
-							<li><a href="#!" class="item-menu-footer__link">Кадастровые услуги</a></li>
-							<li><a href="#!" class="item-menu-footer__link">Получение готовых документов</a></li>
+							<li><a href="services-page.html" class="item-menu-footer__link">Перепланировка</a></li>
+							<li><a href="services-page.html" class="item-menu-footer__link">Регистрация сделок с недвижимостью</a></li>
+							<li><a href="services-page.html" class="item-menu-footer__link">Кадастровые услуги</a></li>
+							<li><a href="services-page.html" class="item-menu-footer__link">Получение готовых документов</a></li>
 						</ul>
 					</div>
 					<div class="menu-footer__item item-menu-footer">
 						<div class="item-menu-footer__label">Контакты</div>
 						<ul class="item-menu-footer__list">
-							<li><a href="#!" class="item-menu-footer__link"><img src="img/icons/sm-phone.svg" alt=""> +7 (495) 685-93-06</a></li>
-							<li><a href="#!" class="item-menu-footer__link"><img src="img/icons/sm-phone.svg" alt=""> +7 (985) 000-85-95</a></li>
-							<li><a href="#!" class="item-menu-footer__link"><img src="img/icons/sm-email.svg" alt=""> mskofo@gmail.com</a></li>
-							<li><a href="#!" class="item-menu-footer__link"><img src="img/icons/time.svg" alt=""> Ежедневно с 10:00 – 21:00</a></li>
-							<li><a href="#!" class="item-menu-footer__link"><img src="img/icons/map.svg" alt=""> г. Санкт-Петербург, ул. Александра Матросова, 10, Россия</a></li>
+							<li><a href="tel:+74956859306" class="item-menu-footer__link"><img src="img/icons/sm-phone.svg" alt=""> +7 (495) 685-93-06</a></li>
+							<li><a href="tel:+79850008595" class="item-menu-footer__link"><img src="img/icons/sm-phone.svg" alt=""> +7 (985) 000-85-95</a></li>
+							<li><a href="mailto:mskofo@gmail.com" class="item-menu-footer__link"><img src="img/icons/sm-email.svg" alt=""> mskofo@gmail.com</a></li>
+							<li><a class="item-menu-footer__link"><img src="img/icons/time.svg" alt=""> Ежедневно с 10:00 – 21:00</a></li>
+							<li><a class="item-menu-footer__link"><img src="img/icons/map.svg" alt=""> г. Санкт-Петербург, ул. Александра Матросова, 10, Россия</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -403,8 +413,32 @@
 		</div>
 	</footer>
  </div>
+ <script>
+	//Маска подсети
+ //подключение к текстовому полю
+ document.querySelector('#phone').onkeydown = function(e){
+    inputphone(e,document.querySelector('#phone'))
+    }
+    document.querySelector('#phone2').onkeydown = function(e){
+        inputphone(e,document.querySelector('#phone2'))
+        }
 
-
+    //Функция маски формат +7 (
+    function inputphone(e, phone){
+    function stop(evt) {
+        evt.preventDefault();
+    }
+    let key = e.key, v = phone.value; not = key.replace(/([0-9])/, 1)
+    
+    if(not == 1 || 'Backspace' === not){
+    if('Backspace' != not){ 
+        if(v.length < 3 || v ===''){phone.value= '+7('}
+        if(v.length === 6){phone.value= v +')'}
+        if(v.length === 10){phone.value= v +'-'}
+         if(v.length === 13){phone.value= v +'-'}
+        }
+    }else{stop(e)}  }
+</script>
 <script src="js/swiper-bundle.min.js"></script> 
 <script src="js/script.js"></script>
 <script src="js/popup.js"></script>
@@ -413,6 +447,5 @@
 <script src="js/gallery.js"></script>
 <script src="js/animate.js"></script> 
 </body>
-
-
 </html>
+
