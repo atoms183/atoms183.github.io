@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Общеобразовательная школа на 900 мест</title>
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
-<!-- <link rel="stylesheet" href="css/style.min.css"> -->
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.min.css">
 <link rel="icon" href="img/cover/logo.svg">
 </head>
 <body>
@@ -209,37 +208,73 @@
 				</div>
 			</div>
 		</section>
+		
 		<section class="realization-project">
 			<div class="realization-project__container">
 				<div class="realization-project__title title _anim-items _anim-no-hide">Реализация проекта</div>
-				<div class="realization-project__body">
-					<div class="realization-project__item item-realization-project">
-						<div class='item-realization-project__image  async-image-holder'
-						data-async-src='img/projects/realization/01.jpg' data-async-src-low='img/projects/realization/01.jpg'data-swgl-src='img/projects/realization/01.jpg'></div>
+				<div class="realization-project__body" id="project-grid">
+
+					<div class="realization-project__item  async-image-holder" style="height: 372px;" data-async-src='img/projects/realization/01.jpg' data-async-src-low='img/projects/realization/01.jpg'data-swgl-src='img/projects/realization/01.jpg'>
+					
 					</div>
-					<div class="realization-project__item item-realization-project">
-						<div class='item-realization-project__image  async-image-holder'
-						data-async-src='img/projects/realization/02.jpg' data-async-src-low='img/projects/realization/02.jpg'data-swgl-src='img/projects/realization/02.jpg'></div>
+					<div class="realization-project__item  async-image-holder" style="height: 485px;" data-async-src='img/projects/realization/02.jpg' data-async-src-low='img/projects/realization/02.jpg'data-swgl-src='img/projects/realization/02.jpg'>
+					
 					</div>
-					<div class="realization-project__item item-realization-project">
-						<div class='item-realization-project__image  async-image-holder'
-						data-async-src='img/projects/realization/03.jpg' data-async-src-low='img/projects/realization/03.jpg'data-swgl-src='img/projects/realization/03.jpg'></div>
+					<div class="realization-project__item  async-image-holder" style="height: 372px;" data-async-src-low='img/projects/realization/03.jpg'data-swgl-src='img/projects/realization/03.jpg'>
+
 					</div>
-					<div class="realization-project__item item-realization-project">
-						<div class='item-realization-project__image  async-image-holder'
-						data-async-src='img/projects/realization/04.jpg' data-async-src-low='img/projects/realization/04.jpg'data-swgl-src='img/projects/realization/04.jpg'></div>
+					<div class="realization-project__item  async-image-holder" style="height: 364px;" data-async-src-low='img/projects/realization/04.jpg'data-swgl-src='img/projects/realization/04.jpg'>
+
 					</div>
-					<div class="realization-project__item item-realization-project">
-						<div class='item-realization-project__image  async-image-holder'
-						data-async-src='img/projects/realization/05.jpg' data-async-src-low='img/projects/realization/05.jpg'data-swgl-src='img/projects/realization/05.jpg'></div>
+
+					<div class="realization-project__item  async-image-holder" style="height: 307px;" data-async-src-low='img/projects/realization/05.jpg'data-swgl-src='img/projects/realization/05.jpg'>
+
 					</div>
-					<div class="realization-project__item item-realization-project">
-						<div class='item-realization-project__image  async-image-holder'
-						data-async-src='img/projects/realization/06.jpg' data-async-src-low='img/projects/realization/06.jpg'data-swgl-src='img/projects/realization/06.jpg'></div>
+
+					<div class="realization-project__item  async-image-holder" style="height: 364px;" data-async-src-low='img/projects/realization/06.jpg'data-swgl-src='img/projects/realization/06.jpg'>
+					
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> 
+
+		<script>
+			let mainId = 'project-grid';
+		let itemIdentifier = '#project-grid .realization-project__item';
+
+		document.addEventListener('DOMContentLoaded', function(e) {
+
+			// Programmatically get the column width
+			let item = document.querySelector(itemIdentifier);
+			let parentWidth = item.parentNode.getBoundingClientRect().width;
+			let itemWidth = item.getBoundingClientRect().width + parseFloat(getComputedStyle(item).marginLeft) + parseFloat(getComputedStyle(item).marginRight);
+			let columnWidth = Math.round((1 / (itemWidth / parentWidth)));
+
+			// We need this line since JS nodes are dumb
+			let arrayOfItems = Array.prototype.slice.call( document.querySelectorAll(itemIdentifier) );
+			let trackHeights = {};
+			arrayOfItems.forEach(function(item) {
+				// Get index of item
+				let thisIndex = arrayOfItems.indexOf(item);
+				// Get column this and set width
+				let thisColumn = thisIndex % columnWidth;
+				if(typeof trackHeights[thisColumn] == "undefined") {
+					trackHeights[thisColumn] = 0;
+				}
+				trackHeights[thisColumn] += item.getBoundingClientRect().height + parseFloat(getComputedStyle(item).marginBottom);
+				// If the item has an item above it, then move it to fill the gap
+				if(thisIndex - columnWidth >= 0) {
+					let getItemAbove = document.querySelector(`${itemIdentifier}:nth-of-type(${thisIndex - columnWidth + 1})`);
+					let previousBottom = getItemAbove.getBoundingClientRect().bottom;
+					let currentTop = item.getBoundingClientRect().top - parseFloat(getComputedStyle(item).marginBottom);
+					item.style.top = `-${currentTop - previousBottom}px`;
+				}
+			});
+			// let max = Math.max(...Object.values(trackHeights));
+			// document.getElementById(mainId).style.height = `${max}px`;
+		});
+		</script>
+
 		<section class="another-projects">
 			<div class="another-projects__container">
 				<div class="another-projects__title title _anim-items _anim-no-hide">Другие проекты</div>
