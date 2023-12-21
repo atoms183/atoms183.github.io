@@ -46,7 +46,7 @@ var swiper = new Swiper(".projects__swiper, .another-projects__swiper, .what-say
          slidesPerView: 1,
          spaceBetween: 27,
        },
-       768: {
+       570: {
          slidesPerView: 2,
          spaceBetween: 27,
        },
